@@ -5,29 +5,30 @@
   <head>
     <title>Egon L. Willighagen</title>
     <link rel="foaf:primaryTopic" href="#egonw" />
+    <link rel="stylesheet" type="text/css" href="egonw.css" />
   </head>
+
   <body>
-    <div role="foaf:Person" id="egonw" about="#egonw">
-      <h1><span property="foaf:givenname">Egon</span> <span property="foaf:family_name">Willighagen</span></h1>
-      <p>Post-doc at the Uppsala University in Sweden. I study the role of machine representation of knowledge and
-      hypothesis in life sciences, involving (proteo)chemometrics and semantic web technologies. In the past, I
-      have applied research on this in QSAR, crystallography and metabolomics.
-      Open source programming is my main hobby resulting in participation in, amongst many others, MetWare,
-      Bioclipse, CDK and Jmol.</p>
+  <div class="container">
+    <div role="foaf:Person" about="#egonw" class="sidebar">
+      <h3>Post Address</h3>
       <p>
-        Post Address:<br />
         <a rel="foaf:workplaceHomepage" href="http://www.uu.se/">Uppsala University</a><br />
         <a rel="foaf:workplaceHomepage" href="http://www.farmbio.uu.se/">Department of Pharmaceutical Life Sciences</a><br />
         dr E.L. Willighagen<br />
         Box 591<br />
         SE-751 24 Uppsala<br /><br />
-        Visiting Address: <br />
+      </p>
+      <h3>Visiting Address</h3>
+      <p>
         BMC<br />
         Husargatan 3<br />
         Uppsala<br />
         Phone: <span rel="foaf:phone">+46 18 471 5048</span><br />
         Fax: <span>+46 18 471 4847</span><br /><br />
-        Web Addresses:<br />
+      </p>
+      <h3>Web Addresses</h3>
+      <p>
         Blogs: <a rel="foaf:weblog" href="http://chem-bla-ics.blogspot.com/">chem-bla-ics</a>,
                <a rel="foaf:weblog" href="http://chemicalblogspace.blogspot.com/">The Chemical blogspace Blog</a>,
                <a rel="foaf:weblog" href="http://kemistry-desktop.blogspot.com/">kemistry desktop environment</a>,
@@ -64,17 +65,29 @@
           </span>
         </span>
       </p>
-      <h2>Publications</h2>
-      For now, please find <a href="http://citeulike.org/user/egonw/tag/papers">my publications @ CiteULike</a>.
     </div>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-1031907-11");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-  </body>
+    <div role="foaf:Person" id="egonw" about="#egonw" class="content">
+      <h1 class="header"><span property="foaf:givenname">Egon</span> <span property="foaf:family_name">Willighagen</span></h1>
+      <p>Post-doc at the Uppsala University in Sweden. I study the role of machine representation of knowledge and
+      hypothesis in life sciences, involving (proteo)chemometrics and semantic web technologies. In the past, I
+      have applied research on this in QSAR, crystallography and metabolomics.
+      Open source programming is my main hobby resulting in participation in, amongst many others, MetWare,
+      Bioclipse, CDK and Jmol.</p>
+      <h2>Publications</h2>
+      <p>For now, please find <a href="http://citeulike.org/user/egonw/tag/papers">my publications @ CiteULike</a>.</p>
+    </div>
+  </div>
+
+  <!-- stuff for statistics and other goodies -->
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-1031907-11");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+ 
+ </body>
 </html>
