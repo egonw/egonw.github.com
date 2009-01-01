@@ -10,7 +10,7 @@
 
   <body>
   <div class="container">
-    <div role="foaf:Person" about="#egonw" class="sidebar">
+    <div about="#egonw" class="sidebar">
       <h3>Post Address</h3>
       <p>
         <a rel="foaf:workplaceHomepage" href="http://www.uu.se/">Uppsala University</a><br />
@@ -36,7 +36,7 @@
         Social Networking:
         <span rel="foaf:holdsAccount">
           <span typeof="foaf:OnlineAccount">
-            <a href="http://delicious.com/egonw" property="foaf:accountName">egonw</a>@<a rel="foaf:accountServiceHomepage" href="http://delicious.com/">Delicious</a>
+            <a href="http://delicious.com/egonw" rel="foaf:accountName">egonw</a>@<a rel="foaf:accountServiceHomepage" href="http://delicious.com/">Delicious</a>
           </span>
         </span>,
         <span rel="foaf:holdsAccount">
@@ -66,7 +66,7 @@
         </span>
       </p>
     </div>
-    <div role="foaf:Person" id="egonw" about="#egonw" class="content">
+    <div href="[foaf:Person]" rel="rdf:type" id="egonw" about="#egonw" class="content">
       <h1 class="header"><span property="foaf:givenname">Egon</span> <span property="foaf:family_name">Willighagen</span></h1>
       <p>Post-doc at the Uppsala University in Sweden. I study the role of machine representation of knowledge and
       hypothesis in life sciences, involving (proteo)chemometrics and semantic web technologies. In the past, I
