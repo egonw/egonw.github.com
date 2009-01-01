@@ -26,14 +26,14 @@ h3 {
 
 div.sidebar {
  float: right;
- width: 160px;
+ width: 220px;
  margin: 0;
  padding: 1em;
  font-size: 10pt;
 }
 
 div.content {
- margin-right: 190px;
+ margin-right: 250px;
  border-right: 1px solid gray;
  padding: 1em;
  font-size: 12pt;
