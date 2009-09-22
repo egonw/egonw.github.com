@@ -13,14 +13,14 @@
 
   <body>
   <div class="container">
-    <div about="#egonw" class="sidebar">
+    <div about="http://egonw.github.com/#me" class="sidebar">
       <h3>Post Address</h3>
       <p>
         <a rel="foaf:workplaceHomepage" href="http://www.uu.se/">Uppsala University</a><br />
         <a rel="foaf:workplaceHomepage" href="http://www.farmbio.uu.se/">Department of Pharmaceutical Biosciences</a><br />
         dr E.L. Willighagen<br />
         Box 591<br />
-        SE-751 24 Uppsala<br /><br />
+        SE-751 24 <span rel="foaf:based_near">Uppsala</span><br /><br />
       </p>
       <h3>Visiting Address</h3>
       <p>
@@ -82,7 +82,13 @@
     </div>
     <div typeof="foaf:Person" id="egonw" about="#egonw" class="content">
       <h1 class="header"><span property="foaf:givenname">Egon</span> <span property="foaf:family_name">Willighagen</span></h1>
-      <p>Post-doc at the Uppsala University in Sweden. I study the role of machine representation of knowledge and
+      <p>Post-doc at the Uppsala University in Sweden, with
+      <span rel="foaf:knows">
+        <span typeof="foaf:Person">
+          Prof. <span rel="foaf:name">Wikberg</span>.
+        </span>
+      </span>
+      I study the role of machine representation of knowledge and
       hypothesis in life sciences, involving (proteo)chemometrics and semantic web technologies. In the past, I
       have applied research on this in QSAR, crystallography and metabolomics.
       Open source programming is my main hobby resulting in participation in, amongst many others,
@@ -103,10 +109,22 @@
       </span>, and
       <span rel="foaf:currentProject">
           <span typeof="foaf:Project">
-            <a rel="foaf:homepage" href="http://www.jmo.org/">Jmol</a>
+            <a rel="foaf:homepage" href="http://www.jmol.org/">Jmol</a>
           </span>
       </span>. See also my <a href="bio.html">biography</a> and below.</p>
-      <h2>Research Methods</h2>
+      <h2>My Group</h2>
+      <p>Well, it is more like I want to establish a group. But, they say and empty set is a set too!</p>
+      <h3>Group Members</h3>
+      <ul>
+        <li><p>
+          <span rel="foaf:knows">
+            <span typeof="foaf:Person">
+              <span rel="foaf:firstname">Samuel</span> <span rel="foaf:surname">Lampa</span> (<a rel="foaf:weblog" href="http://saml.rilspace.com/">blog</a>)
+            </span>
+          </span>
+        </p></li>
+      </ul>
+      <h2>Research</h2>
       <p>The research in my group is about reducing the error introduced in chemical data analysis by
         the analysis itself, a field coined <i>Molecular Chemometrics</i>.
         This involves study of the errors introduced by improper handling of
