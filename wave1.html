@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/" xml:lang="en">
+  <head>
+    <title>Egon L. Willighagen</title>
+    <link rel="foaf:primaryTopic" href="http://egonw.github.com/#me" />
+    <link rel="stylesheet" type="text/css" href="egonw.css" />
+    <link rel="meta" type="application/rdf+xml" title="FOAF"
+          href="http://www.w3.org/2007/08/pyRdfa/extract?uri=http://egonw.github.com/index.html" />
+    <link rel="alternate" type="application/atom+xml" title="Atom"  href="http://chem-bla-ics.blogspot.com/feeds/posts/default" />
+  </head>
+
+  <body>
+  <div class="container">
+    <div about="http://egonw.github.com/#me" class="sidebar">
+    </div>
+    <div class="content">
+
+<div id="waveframe" style="width: 800px; height: 500px"></div>
+<script type="text/javascript" 
+  src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("wave", "1");
+google.setOnLoadCallback(initialize);
+function initialize() {
+  var waveframe = document.getElementById("waveframe");
+  var embedOptions = {
+    target: waveframe,
+    header: true,
+    toolbar: true,
+    footer: true
+  };
+  var wavePanel = new google.wave.WavePanel(embedOptions);
+  wavePanel.loadWave("googlewave.com!w+gMqKmHKMC");
+}
+</script>
+
+   </div> 
+ </body>
+</html>
