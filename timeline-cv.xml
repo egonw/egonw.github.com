@@ -1,0 +1,45 @@
+<data>
+    <event 
+        start="Nov 01 2001 09:00:00 GMT"
+        end="Jan 15 2006 09:00:00 GMT"
+        isDuration="true"
+        title="PhD research Radboud University"
+        >
+        PhD research with Dr Ron Wehrens and Prof. Lutgarde Buydens.
+        </event>
+    <event
+        start="Jan 01 2003 09:00:00 GMT"
+        end="Mar 31 2003 09:00:00 GMT"
+        isDuration="true"
+        title="Visiting Scientist at Cambridge University"
+        >
+        Working with Prof. Peter Murray-Rust.
+        </event>
+    <event
+        start="Apr 01 2006 09:00:00 GMT"
+        end="Mar 31 2007 09:00:00 GMT"
+        isDuration="true"
+        title="Post-doc at Cologne University"
+        >
+        Work on the CDK and Bioclipse with Dr Christoph Steinbeck at the
+        Cologne University BioInformatics Center (CUBIC).
+        </event>
+    <event
+        start="Jun 01 2007 09:00:00 GMT"
+        end="Aug 31 2008 09:00:00 GMT"
+        isDuration="true"
+        title="Post-doc at Wageningen University"
+        >
+        Work on Metware with Dr Roeland van Ham and Prof. Fred van Eeuwijk at
+	Plant Research International and Biometris, both part of Wageningen
+	University and Research Center.
+        </event>
+    <event
+        start="Oct 01 2008 09:00:00 GMT"
+        end="Sep 30 2010 09:00:00 GMT"
+        isDuration="true"
+        title="Post-doc at Uppsala University"
+        >
+        Work on Bioclipse and the CDK with Prof. Jarl Wikberg.
+        </event>
+</data>

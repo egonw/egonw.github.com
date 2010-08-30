@@ -10,12 +10,12 @@
     <link rel="meta" type="application/rdf+xml" title="FOAF"
           href="http://www.w3.org/2007/08/pyRdfa/extract?uri=http://egonw.github.com/index.html" />
     <link rel="alternate" type="application/atom+xml" title="Atom"  href="http://chem-bla-ics.blogspot.com/feeds/posts/default" />
+    <script src="http://static.simile.mit.edu/timeline/api-2.3.0/timeline-api.js?bundle=true" type="text/javascript"></script>
+    <script src="timeline-custom.js" type="text/javascript"></script>
   </head>
 
-  <body>
+  <body onload="onLoad();" onresize="onResize();">
   <div class="container">
-    <div class="sidebar">
-    </div>
     <div typeof="foaf:Person" id="egonw" about="http://egonw.github.com/#me" class="content">
       <h1 class="header"><span property="foaf:givenname">Egon</span> <span property="foaf:family_name">Willighagen</span></h1>
       <div class="toc">
@@ -49,6 +49,13 @@
             <a rel="foaf:homepage" href="http://www.jmol.org/">Jmol</a>
           </span>
       </span>. See also my <a href="bio.html">biography</a> and below.</p>
+
+      <div id="my-timeline" style="height: 150px; border: 1px solid #aaa"></div>
+      <noscript>
+        This page uses Javascript to show you a Timeline. Please enable Javascript in your
+        browser to see the full page. Thank you.
+      </noscript>
+
       <h2 id="group">My Group</h2>
       <p>Well, it is more like I want to establish a group. Moreover, I'm still just a post-doc embedded
         in the Bioclipse/Proteochemometrics group of <a href="http://www.farmbio.uu.se/upload/avd2/jarl/"
