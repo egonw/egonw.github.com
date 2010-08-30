@@ -1,4 +1,5 @@
 <data>
+  <!-- positions -->
     <event 
         start="Nov 01 2001 09:00:00 GMT"
         end="Jan 15 2006 09:00:00 GMT"
@@ -41,5 +42,122 @@
         title="Post-doc at Uppsala University"
         >
         Work on Bioclipse and the CDK with Prof. Jarl Wikberg.
+        </event>
+  <!-- special events -->
+    <event
+        start="Apr 02 2008 09:00:00 GMT"
+        title="PhD Degree"
+        >
+	  Received PhD degree (see
+	  &lt;a href="http://chem-bla-ics.blogspot.com/2008/03/todo-april-2nd-defend-my-phd-work.html">TODO: April 2nd, defend my PhD work&lt;/a>).
+        </event>
+  <!-- publications -->
+    <event
+        start="Jun 30 2010 09:00:00 GMT"
+        title="Towards interoperable and reproducible QSAR analyses: Exchange of datasets"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1186/1758-2946-2-5">10.1186/1758-2946-2-5&lt;/a>
+        </event>
+    <event
+        start="Mar 29 2010 09:00:00 GMT"
+        title="CDK-Taverna: an open workflow environment for cheminformatics"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1186/1471-2105-11-159">10.1186/1471-2105-11-159&lt;/a>
+        </event>
+    <event
+        start="Dec 03 2009 09:00:00 GMT"
+        title="Bioclipse 2: A scriptable integration platform for the life sciences"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1186/1471-2105-10-397">10.1186/1471-2105-10-397&lt;/a>
+        </event>
+    <event
+        start="Sep 04 2009 09:00:00 GMT"
+        title="XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1186/1471-2105-10-279">10.1186/1471-2105-10-279&lt;/a>
+        </event>
+    <event
+        start="Dec 21 2007 09:00:00 GMT"
+        title="Userscripts for the Life Sciences"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1186/1471-2105-8-487">10.1186/1471-2105-8-487&lt;/a>
+        </event>
+    <event
+        start="Sep 22 2007 09:00:00 GMT"
+        title="Chemical Markup, XML, and the World Wide Web. 7. CMLSpect, an XML Vocabulary for Spectral Data"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1021/ci600531a">10.1021/ci600531a&lt;/a>
+        </event>
+    <event
+        start="Aug 14 2007 09:00:00 GMT"
+        title="Supervised Self-Organizing Maps in Crystal Property and Structure Prediction"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1021/cg060872y">10.1021/cg060872y&lt;/a>
+        </event>
+    <event
+        start="Feb 22 2007 09:00:00 GMT"
+        title="Bioclipse: an open source workbench for chemo- and bioinformatics"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1186/1471-2105-8-59">10.1186/1471-2105-8-59&lt;/a>
+        </event>
+    <event
+        start="Dec 01 2006 09:00:00 GMT"
+        title="Molecular Chemometrics"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1080/10408340600969601">10.1080/10408340600969601&lt;/a>
+        </event>
+    <event
+        start="Jun 01 2006 09:00:00 GMT"
+        title="Recent Developments of the Chemistry Development Kit (CDK) - An Open-Source Java Library for Chemo- and Bioinformatics"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.2174/138161206777585274">10.2174/138161206777585274&lt;/a>
+        </event>
+    <event
+        start="Feb 22 2006 09:00:00 GMT"
+        title="The Blue Obelisk - Interoperability in Chemical Informatics"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1021/ci050400b">10.1021/ci050400b&lt;/a>
+        </event>
+    <event
+        start="Jan 26 2006 09:00:00 GMT"
+        title="On the Use of 1H and 13C 1D NMR Spectra as QSPR Descriptors"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1021/ci050282s">10.1021/ci050282s&lt;/a>
+        </event>
+    <event
+        start="Jul 01 2006 09:00:00 GMT"
+        title="Method for the computational comparison of crystal structures"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1107/S0108768104028344">10.1107/S0108768104028344&lt;/a>
+        </event>
+    <event
+        start="Jan 20 2004 09:00:00 GMT"
+        title="Chemical Markup, XML, and the World Wide Web. 5. Applications of Chemical Metadata in RSS Aggregators"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1021/ci034244p">10.1021/ci034244p&lt;/a>
+        </event>
+    <event
+        start="Feb 11 2003 09:00:00 GMT"
+        title="The Chemistry Development Kit (CDK): An Open-Source Java Library for Chemo- and Bioinformatics"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1021/ci025584y">10.1021/ci025584y&lt;/a>
+        </event>
+    <event
+        start="Mar 13 2002 09:00:00 GMT"
+        title="Cationic Gemini Surfactants Based on Tartaric Acid: Synthesis, Aggregation, Monolayer Behaviour, and Interaction with DNA"
+        >
+	  DOI:&lt;a href="http://dx.doi.org/10.1002/1099-0690(200204)2002:8&lt;1397::AID-EJOC1397>3.0.CO;2-6y">10.1002/1099-0690(200204)2002:8&lt;1397::AID-EJOC1397&lt;/a>
+        </event>
+    <event
+        start="Jan 01 2001 09:00:00 GMT"
+        title="Processing CML conventions in Java"
+        >
+	  &lt;a href="http://www.scribd.com/doc/14333194/Processing-CML-Conventions-in-Java">Archived&lt;/a>
+        </event>
+    <event
+        start="Jan 28 2000 09:00:00 GMT"
+        title="JChemPaint - Using the Collaborative Forces of the Internet to Develop a Free Editor for 2D Chemical Structures"
+        >
+	  &lt;a href="http://www.mdpi.org/molecules/html/50100093.htm">HTML&lt;/a>
         </event>
 </data>
