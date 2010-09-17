@@ -53,6 +53,12 @@
         </event>
   <!-- publications -->
     <event
+        start="Sep 09 2010 09:00:00 GMT"
+        title="The Chemical Translation Service (CTS) - a web-based tool to improve standardization of metabolomic reports."
+        >
+          DOI:&lt;a href="http://dx.doi.org/10.1093/bioinformatics/btq476">10.1093/bioinformatics/btq476&lt;/a>
+        </event>
+    <event
         start="Jun 30 2010 09:00:00 GMT"
         title="Towards interoperable and reproducible QSAR analyses: Exchange of datasets"
         >
