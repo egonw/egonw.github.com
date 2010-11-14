@@ -43,6 +43,14 @@
         >
         Work on Bioclipse and the CDK with Prof. Jarl Wikberg.
         </event>
+    <event
+        start="Oct 01 2010 09:00:00 GMT"
+        end="Dec 31 2010 09:00:00 GMT"
+        isDuration="true"
+        title="Postdoctoral Research Associate at the University of Cambridge"
+        >
+        Work on Oscar with Dr Peter Murray-Rust.
+        </event>
   <!-- special events -->
     <event
         start="Apr 02 2008 09:00:00 GMT"
