@@ -51,6 +51,14 @@
         >
         Work on Oscar with Dr Peter Murray-Rust.
         </event>
+    <event
+        start="Jan 01 2011 09:00:00 GMT"
+        end="Dec 31 2011 09:00:00 GMT"
+        isDuration="true"
+        title="Postdoctoral Researcher at the Karolinska Institute"
+        >
+        Work on predictive toxicology with Prof. Roland Grafström and Prof. Bengt Fadeel.
+        </event>
   <!-- special events -->
     <event
         start="Apr 02 2008 09:00:00 GMT"
