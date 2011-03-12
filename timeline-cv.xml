@@ -67,7 +67,26 @@
 	  Received PhD degree (see
 	  &lt;a href="http://chem-bla-ics.blogspot.com/2008/03/todo-april-2nd-defend-my-phd-work.html">TODO: April 2nd, defend my PhD work&lt;/a>).
         </event>
+  <!-- books / chapters -->
+    <event
+        start="Feb 06 2011 09:00:00 GMT"
+        title="Groovy Cheminformatics with the Chemistry Development Kit. Ed. 1.3.8-0."
+        >
+          See &lt;a href="http://chem-bla-ics.blogspot.com/2011/02/groovy-cheminformatics.html">this post&lt;/a>.
+        </event>
+     <event
+        start="Mar 11 2011 09:00:00 GMT"
+        title="Introduction to Pharmaceutical Bioinformatics"
+        >
+          See &lt;a href="http://chem-bla-ics.blogspot.com/2011/03/pharmaceutical-bioinformatics.html">this post&lt;/a>.
+        </event>
   <!-- publications -->
+    <event
+        start="Mar 07 2011 09:00:00 GMT"
+        title="Linking the Resource Description Framework to cheminformatics and proteochemometrics"
+        >
+          DOI:&lt;a href="http://dx.doi.org/10.1186/2041-1480-2-S1-S6">10.1186/2041-1480-2-S1-S6&lt;/a>
+        </event>
     <event
         start="Sep 09 2010 09:00:00 GMT"
         title="The Chemical Translation Service (CTS) - a web-based tool to improve standardization of metabolomic reports."
