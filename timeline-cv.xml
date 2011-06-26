@@ -94,6 +94,18 @@
         </event>
   <!-- publications -->
     <event
+        start="May 16 2011 09:00:00 GMT"
+        title="Linked open drug data for pharmaceutical research and development"
+        >
+          DOI:&lt;a href="http://dx.doi.org/10.1186/1758-2946-3-19">10.1186/1758-2946-3-19&lt;/a>
+        </event>
+    <event
+        start="May 13 2011 09:00:00 GMT"
+        title="Resource description framework technologies in chemistry"
+        >
+          DOI:&lt;a href="http://dx.doi.org/10.1186/1758-2946-3-15">10.1186/1758-2946-3-15&lt;/a>
+        </event>
+    <event
         start="Mar 07 2011 09:00:00 GMT"
         title="Linking the Resource Description Framework to cheminformatics and proteochemometrics"
         >
