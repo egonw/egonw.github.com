@@ -4,7 +4,7 @@ function onLoad() {
   var bandInfos = [
     Timeline.createBandInfo({
       eventSource:    eventSource,
-      date:           "Jan 01 2011 00:00:00 GMT",
+      date:           "Jul 01 2011 00:00:00 GMT",
       width:          "70%",
       intervalUnit:   Timeline.DateTime.MONTH,
       intervalPixels: 100
@@ -12,7 +12,7 @@ function onLoad() {
     Timeline.createBandInfo({
       overview:       true,
       eventSource:    eventSource,
-      date:           "Jan 01 2011 00:00:00 GMT",
+      date:           "Jul 01 2011 00:00:00 GMT",
       width:          "30%",
       intervalUnit:   Timeline.DateTime.YEAR,
       intervalPixels: 200
