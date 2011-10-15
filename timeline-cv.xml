@@ -100,6 +100,24 @@
         </event>
   <!-- publications -->
     <event
+        start="October 15 2011 09:00:00 GMT"
+        title="Open Data, Open Source and Open Standards in chemistry: The Blue Obelisk five years on"
+        >
+          DOI:&lt;a href="http://dx.doi.org/10.1186/1758-2946-3-37">10.1186/1758-2946-3-37&lt;/a>
+        </event>
+    <event
+        start="October 15 2011 09:00:00 GMT"
+        title="Oscar4: a flexible architecture for chemical text-mining"
+        >
+          DOI:&lt;a href="http://dx.doi.org/10.1186/1758-2946-3-41">10.1186/1758-2946-3-41&lt;/a>
+        </event>
+    <event
+        start="October 3 2011 09:00:00 GMT"
+        title="The Chemical Information Ontology: Provenance and Disambiguation for Chemical Data on the Biological Semantic Web"
+        >
+          DOI:&lt;a href="http://dx.doi.org/10.1371/journal.pone.0025513">10.1371/journal.pone.0025513&lt;/a>
+        </event>
+    <event
         start="July 4 2011 09:00:00 GMT"
         title="Elemental Composition determination based on MSn"
         >
