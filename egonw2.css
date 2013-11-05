@@ -1,0 +1,101 @@
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
+  margin: 0; padding: 0; border: 0;
+}
+
+body {
+  background: #7c7c7c url(images/body-bg.png);
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+  background: #fff;
+  /* line-height:150%; */
+}
+
+  #header {
+    height: 100px;
+    background: url(images/header.png);
+  }
+    #header h1 {
+      /* text-indent: -9999px; */
+      color: white;
+      padding: 5pt;
+      margin: 0pt;
+    }
+    
+  #content {
+    overflow: auto;
+    background: url(images/faux-columns.png) repeat-y;
+  }
+    #content .sidebar {
+      width: 180px; float: left; 
+    }
+      #content .sidebar.primary { padding: 0 20px 20px 30px; }
+      #content .sidebar.secondary { padding: 0 30px 20px 20px; }
+      #content .sidebar li {
+        list-style: none;
+        font-size: 16px; color: #666; line-height: 24px;
+      }
+      
+    
+    #content #main {
+      width: 460px; float: left; padding: 0 20px 20px 20px;
+    }
+      #content #main h2 {
+        font: italic 30px Georgia, Serif; color: #aaa; margin: 0 0 10px 0;
+      }
+      #content #main p {
+        font-size: 14px; color: #666; line-height: 24px; margin: 0 0 15px 0;
+      }
+  
+  #footer {
+    height: 84px;
+    background: url(images/footer.png);
+  }
+
+div.container {
+ width:100%;
+ margin:0px;
+ line-height:150%;
+}
+
+div.footer {
+ padding: 0.5em;
+ clear:left;
+}
+
+h1.header {
+ color: white;
+ background-color: orange;
+ padding: 5pt;
+ margin: 5pt;
+}
+
+h2 {
+ font-size: 15pt;
+}
+
+h3 {
+ font-size: 11pt;
+}
+
+.cite {
+ font-size: 9pt;
+}
+
+div.sidebar {
+ float: right;
+ width: 20px;
+ margin: 0;
+ padding: 1em;
+ font-size: 10pt;
+}
+
+div.content {
+ margin-right: 40px;
+ padding: 1em;
+ font-size: 12pt;
+}
