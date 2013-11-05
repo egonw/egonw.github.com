@@ -1,43 +1,60 @@
-div.container {
- width:100%;
- margin:0px;
- line-height:150%;
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
+  margin: 0; padding: 0; border: 0;
 }
 
-div.footer {
- padding: 0.5em;
- clear:left;
+body {
+  background: #7c7c7c;
+  font-family: Helvetica, Arial, Sans-Serif;
 }
 
-h1.header {
- color: white;
- background-color: orange;
- padding: 5pt;
- margin: 5pt;
+#container {
+  width: 960px;
+  margin: 0 auto;
+  background: #fff;
+  /* line-height:150%; */
 }
 
-h2 {
- font-size: 15pt;
-}
+  #header {
+    height: 100px;
+  }
+    #header h1 {
+      color: white;
+      background-color: orange;
+      padding: 5pt;
+      margin: 0pt;
+    }
+    
+  #content {
+    overflow: auto;
+  }
+    #content .sidebar {
+      width: 120px; float: left; 
+    }
+      #content .sidebar.primary { padding: 0 20px 20px 30px; }
+      #content .sidebar.secondary { padding: 0 30px 20px 20px; }
+      #content .sidebar li {
+        list-style: none;
+        font-size: 16px; color: black; line-height: 24px;
+      }
+    
+    #content #main {
+      width: 580px; float: left; padding: 0 20px 20px 20px;
+    }
+      #content #main h2 {
+        margin: 10px 10px 10px 10px;
+	color: black;
+      }
+      #content #main h3 {
+        margin: 10px 10px 10px 10px;
+	color: grey;
+      }
+      #content #main p {
+        font-size: 12px; color: black; line-height: 24px; margin: 0 0 15px 0;
+      }
+  
+  #footer {
+    height: 84px;
+    background-color: orange;
+  }
 
-h3 {
- font-size: 11pt;
-}
-
-.cite {
- font-size: 9pt;
-}
-
-div.sidebar {
- float: right;
- width: 20px;
- margin: 0;
- padding: 1em;
- font-size: 10pt;
-}
-
-div.content {
- margin-right: 40px;
- padding: 1em;
- font-size: 12pt;
-}

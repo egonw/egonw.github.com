@@ -18,19 +18,38 @@
   </head>
 
   <body onload="onLoad();">
-  <div class="container">
-    <div typeof="foaf:Person" id="egonw" about="http://egonw.github.com/#me" class="content">
+  <div id="container">
+    <div id="header" typeof="foaf:Person" about="http://egonw.github.com/#me">
       <h1 class="header"><span property="foaf:givenname">Egon</span> <span property="foaf:family_name">Willighagen</span></h1>
-      <div class="toc">
-        <span class="tocitem">[<a href="#group">My Group</a>]</span>
-        <span class="tocitem">[<a href="#research">Research</a>]</span>
-        <span class="tocitem">[<a href="#collaborations">Collaborations</a>]</span>
-        <span class="tocitem">[<a href="#euprojects">EU Projects</a>]</span>
-        <span class="tocitem">[<a href="#publications">Publications</a>]</span>
-        <span class="tocitem">[<a href="#addresses">Addresses</a>]</span>
-      </div>
-      <p>Postdoctoral researcher at the <a href="http://www.bigcat.unimaas.nl/">Department of Bioinformatics - BiGCaT</a> at
-      <a href="http://www.maastrichtuniversity.nl/">Maastricht University</a>.
+      <p>&nbsp;Postdoctoral researcher at the <a href="http://www.bigcat.unimaas.nl/">Department of Bioinformatics - BiGCaT</a> at
+      <a href="http://www.maastrichtuniversity.nl/">Maastricht University</a>.</p>
+    </div><!--Header-->
+    
+    <div id="content" typeof="foaf:Person" about="http://egonw.github.com/#me">
+      <div class="sidebar primary">
+        <ul>
+          <li><a href="#group">My Group</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#collaborations">Collaborations</a></li>
+          <li><a href="#euprojects">EU Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#addresses">Addresses</a></li>
+        </ul>
+        <p>&nbsp;</p>
+	<p>
+	<a href="http://validator.w3.org/check?uri=referer">
+	  <img src="http://www.w3.org/Icons/valid-xhtml-rdfa-blue"
+	      alt="Valid XHTML + RDFa" /></a>
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+	  <img style="border:0;width:88px;height:31px"
+	      src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+	      alt="Valid CSS!" /></a> <br/>
+	<a href="http://www.w3.org/2007/08/pyRdfa/extract?uri=http%3A//egonw.github.com/index.html">Extract</a>/<a
+           href="http://sparql.captsolo.net/browser/browser.py?url=http://www.w3.org/2007/08/pyRdfa/extract?uri=http%3A//egonw.github.com/index.html">Browse RDF</a>
+	</p>
+      </div><!--Sidebar-->
+      <div class="content" id="main" typeof="foaf:Person" about="http://egonw.github.com/#me">
+      <p>
       I study the role of machine representation of knowledge and
       hypothesis in life sciences, drug discovery, and toxicology, involving chemometrics and semantic web technologies. In the past, I
       have applied research on this in QSAR, crystallography and <span property="foaf:interest">metabolomics</span>.
@@ -47,9 +66,9 @@
       </span>,
       <span rel="foaf:currentProject">
           <span typeof="foaf:Project" about="#cdk">
-            <a rel="foaf:homepage" href="http://cdk.sf.net/">Chemistry Development Kit</a>
+            <a rel="foaf:homepage" href="http://cdk.sf.net/">Chemistry Development Kit</a>,
           </span>
-      </span>,
+      </span>
       <span rel="foaf:currentProject">
           <span typeof="foaf:Project" about="#jmol">
             <a rel="foaf:homepage" href="http://www.jmol.org/">Jmol</a>
@@ -69,7 +88,7 @@
 
       <h2 id="group">My Group</h2>
       <p>Well, it is more like I want to establish a group. Occasionally, I have
-        <a href="http://www.bigcat.unimaas.nl/wiki/index.php/Vacancies">vacancies</a>.
+        <a href="http://www.bigcat.unimaas.nl/wiki/index.php/Vacancies">vacancies</a>.</p>
       <!-- h3>Group Members</h3>
       <ul>
         <li><p>
@@ -81,7 +100,6 @@
           </span>
         </p></li>
       </ul -->
-      </p>
       <h3>Past Members</h3>
       <ul>
         <li><p>
@@ -110,6 +128,7 @@
         Rob Schellhorn (3 month Programmeerzomer projects), and Alexandr Goncearenco, Rianne Feijten, and Answesha Dutta
         (3 month Google Summer of Code projects).
       </p>
+
       <h2 id="research">Research</h2>
       <p>The research in my group is about reducing the error introduced in chemical data analysis by
         the analysis itself, a field coined <i property="foaf:interest">Molecular Chemometrics</i>.
@@ -133,14 +152,14 @@
         methods are being studied for use in <i property="foaf:interest">cheminformatics</i> and exchange of molecular data.
         This work has resulted in the development of CMLRSS, QSAR-ML, the Blue Obelisk Descriptor Ontology (BODO), 
         and the CHEMINF ontology.</p>
-      <p><ul class="cite"><li>Hastings, J., Chepelev, L., Willighagen, E., Adams, N., Steinbeck, C., and Dumontier, M. (2011).
+      <ul class="cite"><li>Hastings, J., Chepelev, L., Willighagen, E., Adams, N., Steinbeck, C., and Dumontier, M. (2011).
         The Chemical Information Ontology: Provenance and Disambiguation for Chemical Data on the Biological
         Semantic Web. PLoS ONE 6, e25513.
         doi:<a href="http://dx.plos.org/10.1371/journal.pone.0025513">10.1371/journal.pone.0025513</a>.</li>
         <li>Willighagen, E. L., Alvarsson, J., Andersson, A., Eklund, M., Lampa, S., Lapins, M., Spjuth, O., and
         Wikberg, J. E. (2011). Linking the Resource Description Framework to cheminformatics and proteochemometrics.
         Journal of Biomedical Semantics 2, S6.
-        doi:<a href="http://dx.doi.org/10.1186/2041-1480-2-S1-S6">10.1186/2041-1480-2-S1-S6</a>.</li></ul></p>
+        doi:<a href="http://dx.doi.org/10.1186/2041-1480-2-S1-S6">10.1186/2041-1480-2-S1-S6</a>.</li></ul>
 
       <h3>Molecular Representation</h3>
       <p>This branch of the research focuses on the presentation of molecular data, such that
@@ -149,10 +168,10 @@
         for molecular crystal structures, the debunking of NMR spectra for some modeling
         approaches, and the development of applied tools, like the Chemistry Development
         Kit.</p>
-      <p><ul class="cite"><li>Willighagen, E. L., Wehrens, R., Verwer, P., De Gelder, R., and Buydens, L. M. C.
+      <ul class="cite"><li>Willighagen, E. L., Wehrens, R., Verwer, P., De Gelder, R., and Buydens, L. M. C.
         (2005). Method for the computational comparison of crystal structures. Acta crystallographica Section
         B Structural crystallography and crystal chemistry 61, 29-36.
-        doi:<a href="http://dx.doi.org/10.1107/S0108768104028344">10.1107/S0108768104028344</a>.</li></ul></p>
+        doi:<a href="http://dx.doi.org/10.1107/S0108768104028344">10.1107/S0108768104028344</a>.</li></ul>
 
       <h3>Statistics</h3>
       <p><i property="foaf:interest">Statistical methods</i> help us find, understand and visualize complex patterns in our
@@ -161,10 +180,10 @@
         back to the <i property="foaf:interest">semantic technologies</i> to do that accurately.
         This work resulted in the application of supervised Self-Organizing Maps to classification
         problems with multiple end points.</p>
-      <p><ul class="cite"><li>Willighagen, E. L., Wehrens, R., Melssen, W., De Gelder, R., and Buydens, L. M. C. (2007).
+      <ul class="cite"><li>Willighagen, E. L., Wehrens, R., Melssen, W., De Gelder, R., and Buydens, L. M. C. (2007).
         Supervised Self-Organizing Maps in Crystal Property and Structure Prediction. Crystal Growth Design
         7, 1738-1745.
-        doi:<a href="http://dx.doi.org/10.1021/cg060872y">10.1021/cg060872y</a>.</li></ul></p>
+        doi:<a href="http://dx.doi.org/10.1021/cg060872y">10.1021/cg060872y</a>.</li></ul>
 
       <h3>Applied Cheminformatics</h3>
       <p>This part of the research is about getting the above methods used in other scientfic fields. This
@@ -173,10 +192,10 @@
         particularly, is well accepted by the scientific community. Solutions here include
         the Chemistry Development Kit, Jmol, Bioclipse, and Oscar, which all make more fundamental
         research in Molecular Chemometrics more accessible.</p>
-      <p><ul class="cite"><li>Steinbeck, C., Han, Y., Kuhn, S., Horlacher, O., Luttmann, E., and Willighagen, E. (2003).
+      <ul class="cite"><li>Steinbeck, C., Han, Y., Kuhn, S., Horlacher, O., Luttmann, E., and Willighagen, E. (2003).
         The Chemistry Development Kit (CDK): an open-source Java library for Chemo- and Bioinformatics. Journal
         of Chemical Information and Computer Sciences 43, 493-500.
-        doi:<a href="http://dx.doi.org/10.1021/ci025584y">10.1021/ci025584y</a>.</li></ul></p>
+        doi:<a href="http://dx.doi.org/10.1021/ci025584y">10.1021/ci025584y</a>.</li></ul>
 
       <h2>Research Topics</h2>
       The topics that this research covers all involves small molecules and nanomaterials, and is currently directed at
@@ -210,11 +229,11 @@
         with
         Dr <a about="#jeliazkova" typeof="foaf:Person" property="foaf:name" 
         >Nina Jeliazkova</a> and others of the
-        <a href="http://www.opentox.org/" typeof="foaf:currentProject" rel="foaf:homepage" about="#opentox">OpenTox.org</a>
+        <a href="http://www.opentox.org/" typeof="foaf:Project" rel="foaf:homepage" about="#opentox">OpenTox.org</a>
         community; with many people in the 
         <a href="http://cdk.sf.net/">CDK</a>
         community; with various people in the 
-        <a href="http://www.w3.org/blog/hcls" typeof="foaf:currentProject" rel="foaf:homepage" about="#hclsig">HCLS interest group</a>;
+        <a href="http://www.w3.org/blog/hcls" typeof="foaf:Project" rel="foaf:homepage" about="#hclsig">HCLS interest group</a>;
         and others.
       </p>
       <h2 id="euprojects">EU Projects</h2>
@@ -248,6 +267,7 @@
           </span>
       </span>
       cluster (SEURAT-1).</p>
+
       <h2 id="publications">Publications</h2>
       <p>For now, please find my publication list at
         <a href="http://scholar.google.se/citations?user=u8SjMZ0AAAAJ&amp;hl=en">Google Scholar</a>,
@@ -257,6 +277,7 @@
         and the less populated
         <a href="http://www.researcherid.com/rid/C-6136-2008">researchid:C-6136-2008</a>.
       </p>
+
       <h2 id="addresses">Addresses</h2>
       <h3>Post Address</h3>
       <!-- p>Please contact me via email for my current post address.</p -->
@@ -268,6 +289,7 @@
         UNS50 Box19<br />
         NL-6200 MD <span property="foaf:based_near">Maastricht</span><br /><br />
       </p>
+
       <h3>Visiting Address</h3>
       <p>
         Department of Bioinformatics - BiGCaT<br />
@@ -343,20 +365,13 @@
           </span>
         </span>
       </p>
-    </div>
-  </div>
-  <div class="footer">
-    <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-      <img src="http://www.w3.org/Icons/valid-xhtml-rdfa-blue"
-           alt="Valid XHTML + RDFa" /></a>
-    <a href="http://jigsaw.w3.org/css-validator/">
-      <img style="border:0;width:88px;height:31px"
-           src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-           alt="Valid CSS!" /></a> <br/>
-    <a href="http://sparql.captsolo.net/browser/browser.py?url=http://www.w3.org/2007/08/pyRdfa/extract?uri=http%3A//egonw.github.com/index.html">Extract RDF</a>
-    </p>
-  </div>
+      </div><!--Main-->
+      <div class="sidebar secondary">
+      </div><!--Sidebar-->
+    </div><!--Content-->
+    <div id="footer">
+    </div><!--Footer-->
+  </div><!--Container-->
 
   <!-- stuff for statistics and other goodies -->
   <script type="text/javascript">
