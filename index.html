@@ -39,10 +39,11 @@
     
       <div class="nav">
         <ul class="nav-list">
-          <li><a href="#group">My Group</a>
+          <li><a href="#group">My Team</a>
 	    <ul class="dropdown-list">
 	      <li><a href="#group-members">Group Members</a></li>
 	      <li><a href="#past-members">Past Members</a></li>
+	      <li><a href="#past-members">Past Students</a></li>
 	    </ul>
 	  </li>
           <li><a href="#research">Research</a>
@@ -69,12 +70,19 @@
       <h2 style="visibility: hidden">About me</h2>
       <p>
       I study the role of machine representation of knowledge and
-      hypothesis in life sciences, drug discovery, and toxicology, involving chemometrics and semantic web technologies. In the past, I
-      have applied research on this in QSAR, crystallography and <span property="foaf:interest">metabolomics</span>.
-      Open source programming is my main hobby resulting in participation in, amongst many others,
+      hypothesis in life sciences, <span property="foaf:interest">metabolomics</span>,
+      drug discovery, and toxicology, involving cheminformatics, chemometrics and semantic web
+      technologies. In the past, I have applied research on this also to QSAR and crystallography.
+      Open source programming and Open science is also my main hobby, resulting in
+      participation in, amongst many others,
       <span rel="foaf:currentProject">
           <span typeof="foaf:Project" about="#cdk">
             <a rel="foaf:homepage" href="http://cdk.sf.net/">Chemistry Development Kit</a>,
+          </span>
+      </span>,
+      <span rel="foaf:currentProject">
+          <span typeof="foaf:Project" about="#wikipathways">
+            <a rel="foaf:homepage" href="http://www.wikipathways.org/">WikiPathways</a>,
           </span>
       </span>,
       <span rel="foaf:currentProject">
@@ -97,8 +105,8 @@
       </section>
 
       <section id="group">
-      <h2>My Group</h2>
-      <p>Being part of the BiGCaT department, I have now established my own research group. Future
+      <h2>My Team</h2>
+      <p>Being part of the BiGCaT Department of Bioinformatics of <span rel="foaf:knows">Prof. <span typeof="foaf:Person" about="#chrisevelo"><span property="foaf:firstname">Chris</span> <span property="foaf:surname">Evelo</span></span></span>, I have now established my own research group. Future
         <a href="http://www.bigcat.unimaas.nl/wiki/index.php/Vacancies">vacancies</a> may be available.</p>
       <section id="group-members" class="second-layer">
       <h3 class="folded">Group Members</h3>
@@ -107,7 +115,7 @@
           <span rel="foaf:knows">
             <span typeof="foaf:Person" about="#cristian">
               <span property="foaf:firstname">Bart</span> <span property="foaf:surname">Smeets</span>
-              (Maastricht University; PhD student; ORCID:<a href="http://orcid.org/0000-0001-6370-6965">0000-0001-6370-6965</a>)
+              (Maastricht University; PhD student 2014-; ORCID:<a href="http://orcid.org/0000-0001-6370-6965">0000-0001-6370-6965</a>)
             </span>
           </span>
         </p></li>
@@ -115,7 +123,7 @@
           <span rel="foaf:knows">
             <span typeof="foaf:Person" about="#linda">
               <span property="foaf:firstname">Linda</span> <span property="foaf:surname">Rieswijk</span>
-              (Maastricht University; Researcher; ORCID:<a href="http://orcid.org/0000-0002-6106-1347">0000-0002-6106-1347</a>)
+              (Maastricht University; Researcher 2015-; ORCID:<a href="http://orcid.org/0000-0002-6106-1347">0000-0002-6106-1347</a>)
             </span>
           </span>
         </p></li>
@@ -123,7 +131,7 @@
           <span rel="foaf:knows">
             <span typeof="foaf:Person" about="#freddy">
               <span property="foaf:firstname">Friederike</span> <span property="foaf:surname">Ehrhart</span>
-              (Maastricht University; Researcher; ORCID:<a href="http://orcid.org/0000-0002-7770-620X">0000-0002-7770-620X</a>)
+              (Maastricht University; Researcher 2015-; ORCID:<a href="http://orcid.org/0000-0002-7770-620X">0000-0002-7770-620X</a>)
             </span>
           </span>
         </p></li>
@@ -142,7 +150,7 @@
         </p></li>
       </ul>
       </section>
-      <section id="past-members" class="second-layer">
+      <section id="past-students" class="second-layer">
       <h3 class="folded">Past Undergraduate and Master Students</h3>
       <ul>
         <li><p>
@@ -203,8 +211,16 @@
 
       <section id="research">
       <h2>Research</h2>
-      <p>The research in my group is about reducing the error introduced in chemical data analysis by
-        the analysis itself, a field coined <i property="foaf:interest">Molecular Chemometrics</i>.
+      <p>The topics that this research covers all involves small molecules and nanomaterials, and is currently directed at
+      <i property="foaf:interest">metabolite and small compound pathways</i>,
+      <i property="foaf:interest">nanotoxicology</i>, and life sciences in general.
+      Research is applied to the fields of <i property="foaf:interest">drug discovery</i>,
+      <i property="foaf:interest">QSAR</i>/<i property="foaf:interest">QSPR</i>, among others.
+      Past topics include <i property="foaf:interest">crystallography</i> and <i property="foaf:interest">polymorph prediction</i>.</p>
+
+      <p>The research I am personally interested in is about reducing the error
+        introduced in (chemical or molecular) data analysis by the analysis itself,
+        a field coined <i property="foaf:interest">Molecular Chemometrics</i>.
         This involves study of the errors introduced by improper handling of
         chemical knowledge, improper representation of the problem, and the statistical analysis
         method used. The solution my group is using to reduce that error involves explicit markup
@@ -281,20 +297,6 @@
       </section>
       </section>
       
-      <section id="research-topics">
-      <h2>Research Topics</h2>
-      <p>The topics that this research covers all involves small molecules and nanomaterials, and is currently directed at
-      <i property="foaf:interest">toxicology</i> and life sciences in general.
-      Research is ongoing in the fields of
-      <i property="foaf:interest">drug discovery</i>,
-      <i property="foaf:interest">QSAR</i>/<i property="foaf:interest">QSPR</i>, among others, in
-      toxicology and <i property="foaf:interest">nanotoxicology</i> (and
-      <i property="foaf:interest">property prediction</i> in general), and
-      <i property="foaf:interest">metabolite and small compound pathways</i>.
-      Past topics include
-      <i property="foaf:interest">crystallography</i> and <i property="foaf:interest">polymorph prediction</i>.</p>
-      </section>
-      
       <section id="collaborations">
       <h2>Research Collaborations</h2>
       <p>
@@ -338,8 +340,10 @@
             <a rel="foaf:homepage" href="http://www.openphacts.org/">Open PHACTS</a>
           </span>
       </span>
-      project. The first is part of the European <a href="http://www.nanosafetycluster.eu/">NanoSafety Cluster</a>.
-      Previously, I worked in the
+      project. The first is part of the European <a href="http://www.nanosafetycluster.eu/">NanoSafety Cluster</a>,
+      of which I am chairing the <a href="http://nanosafetycluster.eu/mailman/admindb/wg4-database">Database Working Group</a>.
+      </p>
+      <p>Previously, I worked in the
       <span rel="foaf:currentProject">
           <span typeof="foaf:Project" about="#toxbank">  
             <a rel="foaf:homepage" href="http://www.toxbank.net/">ToxBank</a>
@@ -354,7 +358,7 @@
       projects on the use of semantic web technologies in drug discovery.
       </p>
       </section>
-      
+
       <section id="publications">
       <h2>Publications</h2>
       <p>For now, please find my publication list at
