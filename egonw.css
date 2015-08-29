@@ -8,6 +8,10 @@ body {
   font-family: Helvetica, Arial, Sans-Serif;
 }
 
+a.blend {
+  color: white;
+}
+
 #container {
   width: 90%; max-width: 1190px; min-width: 763px;
   margin: 0 auto;
