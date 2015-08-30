@@ -201,14 +201,14 @@ body {
 	    background:         linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('http://www.beilstein-journals.org/bjnano/content/figures/2190-4286-6-165-14.png?max-width=550&background=EEEEEE') ; /* Standard syntax */
 	  }
 	  .slider .slide:nth-child(3) {
-	    background: url('plaatjes/show3.gif');
+	    background: url('show3.gif');
 	    background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('plaatjes/show3.gif') ; /* For Safari 5.1 to 6.0 */
 	    background:    -moz-linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('plaatjes/show3.gif') ; /* For Firefox 3.6 to 15 */
 	    background:      -o-linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('plaatjes/show3.gif') ; /* For Opera 11.1 to 12.0 */
 	    background:         linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('plaatjes/show3.gif') ; /* Standard syntax */
 	  }
 	  .slider .slide:nth-child(4) {
-	    background: url('plaatjes/show4.gif');
+	    background: url('show4.gif');
 	    background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('plaatjes/show4.gif') ; /* For Safari 5.1 to 6.0 */
 	    background:    -moz-linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('plaatjes/show4.gif') ; /* For Firefox 3.6 to 15 */
 	    background:      -o-linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('plaatjes/show4.gif') ; /* For Opera 11.1 to 12.0 */
