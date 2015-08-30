@@ -62,10 +62,38 @@
         </ul>
       </div>
       
+      <div class="slider">
+	<div class="slide active">
+	  <span><h4>ChEMBL database as linked open data</h4>
+	  <a href="http://www.jcheminf.com/content/5/1/23">http://www.jcheminf.com/content/5/1/23</a></span>
+	</div>
+	<div class="slide">
+	  <span><h4>The eNanoMapper database for nanomaterial safety information</h4>
+	  <a href="http://dx.doi.org/10.3762/bjnano.6.165">http://dx.doi.org/10.3762/bjnano.6.165</a></span>
+	</div>
+	<div class="slide">
+	  <span><h4>Bioclipse-R: integrating management and visualization of life
+science data with statistical analysis</h4>
+	  <a href="http://dx.doi.org/10.1093/bioinformatics/bts681">http://dx.doi.org/10.1093/bioinformatics/bts681</a></span>
+	</div>
+	<div class="slide">
+	  <span><h4>WikiPathways WP2513: Nanoparticle triggered regulated necrosis</h4>
+	  <a href="http://www.wikipathways.org/index.php/Pathway:WP2513">http://www.wikipathways.org/index.php/Pathway:WP2513</a></span>
+	</div>
+	<div class="slide-prev"></div>
+	<ul class="slider-dots">
+	  <li class="dot active-dot">&bull;</li>
+	  <li class="dot">&bull;</li>
+	  <li class="dot">&bull;</li>
+	  <li class="dot">&bull;</li>
+	</ul>
+	<div class="slide-next"></div>
+      </div>
+      
       <!--Main-->
       
       <div class="content" id="main" typeof="foaf:Person" about="http://egonw.github.com/#me">
-      
+            
       <section id="about-me">
       <h2 style="display: none">About me</h2>
       <p>
@@ -592,9 +620,87 @@ assistant professor in the same group in 2014.
   pageTracker._trackPageview();
   } catch(err) {}</script>
   
-  <!-- Folding and dropdown -->
+  <!-- Folding and sliding -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript">$(document).ready(function(){var foldDisplay=function(){$("h3").each(function(){if($(this).hasClass('folded')){$(this).parent().children('p,ul').css('display','none');}else if($(this).hasClass('unfolded')){$(this).parent().children('p, ul').css('display','block');}});};foldDisplay();var switchFold=function(element){if(element.hasClass('folded')){element.removeClass('folded');element.addClass('unfolded');}else if(element.hasClass('unfolded')){element.removeClass('unfolded');element.addClass('folded');}foldDisplay();};$('section.second-layer>h3').click(function(){switchFold($(this))});$('ul.dropdown-list a').click(function(){var id=$(this).attr('href');var element=$(id).children('h3');switchFold(element);});});</script>
- 
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>-->
+  <script type="text/javascript">$(document).ready(function(){var foldDisplay=function(){$("h3").each(function(){if($(this).hasClass('folded')){$(this).parent().children('p,ul').slideUp();}else if($(this).hasClass('unfolded')){$(this).parent().children('p, ul').slideDown();}});};foldDisplay();var switchFold=function(element){if(element.hasClass('folded')){element.removeClass('folded');element.addClass('unfolded');}else if(element.hasClass('unfolded')){element.removeClass('unfolded');element.addClass('folded');}foldDisplay();};$('section.second-layer>h3').click(function(){switchFold($(this))});$('ul.dropdown-list a').click(function(){var id=$(this).attr('href');var element=$(id).children('h3');switchFold(element);});});</script>
+  <script type="text/javascript">
+  var main = function() {
+  
+  $(window).resize(function(){
+    var w1 = $('.slider').width();
+    var w2 = $('ul.slider-dots').width();
+    
+    var w3 = w1 - w2;
+    var w4 = w3 / 2;
+    
+    $('ul.slider-dots').css('left',w4)
+  });
+  
+  $(window).resize();
+  
+  var switchSlide= function(currentSlide, nextSlide, currentDot, nextDot){
+    currentSlide.removeClass('active');
+    nextSlide.addClass('active');
+    currentDot.removeClass('active-dot');
+    nextDot.addClass('active-dot');
+  };
+  
+  //next slide handeler
+  
+  var nextSlide = function(){
+    var currentSlide = $('.active');
+    var nextSlide = currentSlide.next('.slide');
+    var currentDot = $('.active-dot');
+    var nextDot = currentDot.next('.dot');
+
+    if(nextSlide.length === 0) {
+      nextSlide = $('.slide').first();
+      nextDot = $('.dot').first();
+    }
+    
+    switchSlide(currentSlide, nextSlide, currentDot, nextDot);
+  };
+  
+  $('.slide-next').click(function(){nextSlide()});
+  
+  //previous slide handeler
+  
+  var prevSlide = function(){
+    var currentSlide = $('.active');
+    var prevSlide = currentSlide.prev('.slide');
+    var currentDot = $('.active-dot');
+    var prevDot = currentDot.prev('.dot');
+
+    if(prevSlide.length === 0) {
+      prevSlide = $('.slide').last();
+      prevDot = $('.dot').last();
+    }
+    
+    switchSlide(currentSlide, prevSlide, currentDot, prevDot);
+  };
+  
+  $('.slide-prev').click(function(){prevSlide()});
+  
+  //random slide handeler
+  
+  $('.dot').click(function(){
+    if ($(this).hasClass('active-dot') != true) {
+      var index = $(this).index() + 1;
+      var nextSlide = $('.slide:nth-child(' + index + ')');
+      var nextDot = $('.dot:nth-child(' + index + ')');
+
+      switchSlide($('.active'), nextSlide, $('.active-dot'), nextDot);
+    }
+  });
+  
+  //autoplay
+  
+  setInterval(function(){ nextSlide(); }, 4500);
+  
+  }
+
+  $(document).ready(main);</script>
+  
  </body>
 </html>
