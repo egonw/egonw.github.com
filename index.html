@@ -64,21 +64,21 @@
       
       <div class="slider">
 	<div class="slide active">
-	  <span><h4>ChEMBL database as linked open data</h4>
-	  <a href="http://www.jcheminf.com/content/5/1/23">http://www.jcheminf.com/content/5/1/23</a></span>
+	  <div><h4>ChEMBL database as linked open data</h4>
+	  <a href="http://www.jcheminf.com/content/5/1/23">http://www.jcheminf.com/content/5/1/23</a></div>
 	</div>
 	<div class="slide">
-	  <span><h4>The eNanoMapper database for nanomaterial safety information</h4>
-	  <a href="http://dx.doi.org/10.3762/bjnano.6.165">http://dx.doi.org/10.3762/bjnano.6.165</a></span>
+	  <div><h4>The eNanoMapper database for nanomaterial safety information</h4>
+	  <a href="http://dx.doi.org/10.3762/bjnano.6.165">http://dx.doi.org/10.3762/bjnano.6.165</a></div>
 	</div>
 	<div class="slide">
-	  <span><h4>Bioclipse-R: integrating management and visualization of life
+	  <div><h4>Bioclipse-R: integrating management and visualization of life
 science data with statistical analysis</h4>
-	  <a href="http://dx.doi.org/10.1093/bioinformatics/bts681">http://dx.doi.org/10.1093/bioinformatics/bts681</a></span>
+	  <a href="http://dx.doi.org/10.1093/bioinformatics/bts681">http://dx.doi.org/10.1093/bioinformatics/bts681</a></div>
 	</div>
 	<div class="slide">
-	  <span><h4>WikiPathways WP2513: Nanoparticle triggered regulated necrosis</h4>
-	  <a href="http://www.wikipathways.org/index.php/Pathway:WP2513">http://www.wikipathways.org/index.php/Pathway:WP2513</a></span>
+	  <div><h4>WikiPathways WP2513: Nanoparticle triggered regulated necrosis</h4>
+	  <a href="http://www.wikipathways.org/index.php/Pathway:WP2513">http://www.wikipathways.org/index.php/Pathway:WP2513</a></div>
 	</div>
 	<div class="slide-prev"></div>
 	<ul class="slider-dots">
@@ -620,10 +620,10 @@ assistant professor in the same group in 2014.
   pageTracker._trackPageview();
   } catch(err) {}</script>
   
-  <!-- Folding and sliding -->
+  <!-- Folding, dropping and sliding -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
   <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>-->
-  <script type="text/javascript">$(document).ready(function(){var foldDisplay=function(){$("h3").each(function(){if($(this).hasClass('folded')){$(this).parent().children('p,ul').slideUp();}else if($(this).hasClass('unfolded')){$(this).parent().children('p, ul').slideDown();}});};foldDisplay();var switchFold=function(element){if(element.hasClass('folded')){element.removeClass('folded');element.addClass('unfolded');}else if(element.hasClass('unfolded')){element.removeClass('unfolded');element.addClass('folded');}foldDisplay();};$('section.second-layer>h3').click(function(){switchFold($(this))});$('ul.dropdown-list a').click(function(){var id=$(this).attr('href');var element=$(id).children('h3');switchFold(element);});});</script>
+  <script type="text/javascript">$(document).ready(function(){var foldDisplay=function(){$("h3").each(function(){if($(this).hasClass('folded')){$(this).parent().children('p,ul').slideUp({easing:'linear'});}else if($(this).hasClass('unfolded')){$(this).parent().children('p, ul').slideDown({easing:'linear'});}});};foldDisplay();var switchFold=function(element){if(element.hasClass('folded')){element.removeClass('folded');element.addClass('unfolded');}else if(element.hasClass('unfolded')){element.removeClass('unfolded');element.addClass('folded');}foldDisplay();};$('section.second-layer>h3').click(function(){switchFold($(this))});$('ul.dropdown-list a').click(function(){var id=$(this).attr('href');var element=$(id).children('h3');switchFold(element);});});</script>
   <script type="text/javascript">
   var main = function() {
   
@@ -662,8 +662,6 @@ assistant professor in the same group in 2014.
     switchSlide(currentSlide, nextSlide, currentDot, nextDot);
   };
   
-  $('.slide-next').click(function(){nextSlide()});
-  
   //previous slide handeler
   
   var prevSlide = function(){
@@ -679,8 +677,26 @@ assistant professor in the same group in 2014.
     
     switchSlide(currentSlide, prevSlide, currentDot, prevDot);
   };
+   
+  //autoplay
   
-  $('.slide-prev').click(function(){prevSlide()});
+  var interval = setInterval(nextSlide, 4500);
+  
+  /*function resetInterval() {
+    clearInterval(interval);
+    interval = setInterval(nextSlide, 4500);
+  };*/
+  
+  function pauseInterval() {
+    clearInterval(interval);
+  };
+  
+  function unpauseInterval() {
+    interval = setInterval(nextSlide, 4500);
+  };
+  
+  $('.slide-next').click(function(){nextSlide();/*resetInterval();*/});
+  $('.slide-prev').click(function(){prevSlide();/*resetInterval();*/});
   
   //random slide handeler
   
@@ -691,16 +707,29 @@ assistant professor in the same group in 2014.
       var nextDot = $('.dot:nth-child(' + index + ')');
 
       switchSlide($('.active'), nextSlide, $('.active-dot'), nextDot);
+      /*resetInterval();*/
     }
   });
   
-  //autoplay
+  $('.slider').hover(function(){
+    pauseInterval();
+  },function(){
+    unpauseInterval();
+  });
   
-  setInterval(function(){ nextSlide(); }, 4500);
-  
-  }
-
-  $(document).ready(main);</script>
+  }; $(document).ready(main);
+  </script>
+  <script type="text/javascript" >
+  $(document).ready(function(){
+    $('.nav-list>li').hover(
+      function(){
+	$(this).children('ul.dropdown-list').slideDown('fast');
+      }, function(){
+	$(this).children('ul.dropdown-list').slideUp('fast');
+      }
+    );
+  });
+  </script>
   
  </body>
 </html>
