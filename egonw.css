@@ -12,6 +12,7 @@ body {
   width: 90%; max-width: 1190px; min-width: 763px;
   margin: 0 auto;
   background: #fff;
+  z-index: 9;
 }
 
   /* Header */
@@ -65,12 +66,10 @@ body {
 	width: inherit;
       }
       
-	#content .nav ul.nav-list li:hover ul.dropdown-list {
+	/*#content .nav ul.nav-list li.hover ul.dropdown-list {
           display: block;
-	  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	     -moz-box-sizing: border-box; /* Firefox, other Gecko */
-		  box-sizing: border-box; /* Opera/IE 8+ */
-        }
+	  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+        }*/
         
         #content .nav ul.dropdown-list li {
 	  background-color: white;
@@ -202,21 +201,21 @@ body {
 	    background:         linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('http://www.beilstein-journals.org/bjnano/content/figures/2190-4286-6-165-14.png?max-width=550&background=EEEEEE') ; /* Standard syntax */
 	  }
 	  .slider .slide:nth-child(3) {
-	    background: url('show3.gif');
-	    background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('show3.gif') ; /* For Safari 5.1 to 6.0 */
-	    background:    -moz-linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('show3.gif') ; /* For Firefox 3.6 to 15 */
-	    background:      -o-linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('show3.gif') ; /* For Opera 11.1 to 12.0 */
-	    background:         linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('show3.gif') ; /* Standard syntax */
+	    background: url('plaatjes/show3.gif');
+	    background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('plaatjes/show3.gif') ; /* For Safari 5.1 to 6.0 */
+	    background:    -moz-linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('plaatjes/show3.gif') ; /* For Firefox 3.6 to 15 */
+	    background:      -o-linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('plaatjes/show3.gif') ; /* For Opera 11.1 to 12.0 */
+	    background:         linear-gradient(transparent, rgba(0,0,0,0.35), rgba(0,0,0,0.75)), url('plaatjes/show3.gif') ; /* Standard syntax */
 	  }
 	  .slider .slide:nth-child(4) {
-	    background: url('show4.gif');
-	    background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('show4.gif') ; /* For Safari 5.1 to 6.0 */
-	    background:    -moz-linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('show4.gif') ; /* For Firefox 3.6 to 15 */
-	    background:      -o-linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('show4.gif') ; /* For Opera 11.1 to 12.0 */
-	    background:         linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('show4.gif') ; /* Standard syntax */
+	    background: url('plaatjes/show4.gif');
+	    background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('plaatjes/show4.gif') ; /* For Safari 5.1 to 6.0 */
+	    background:    -moz-linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('plaatjes/show4.gif') ; /* For Firefox 3.6 to 15 */
+	    background:      -o-linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('plaatjes/show4.gif') ; /* For Opera 11.1 to 12.0 */
+	    background:         linear-gradient(transparent, rgba(0,0,0,0.15), rgba(0,0,0,0.75)), url('plaatjes/show4.gif') ; /* Standard syntax */
 	  }
 	
-	  .slider .slide span { position: absolute; bottom: 15px; }
+	  .slider .slide div { position: absolute; bottom: 15px; }
 	
 	.slider * { color: white; text-shadow: -1px 1px 1.5px rgba(0,0,0,0.5); }
 	.slider h4 { font-weight: bold;font-size: 24pt; }
@@ -226,8 +225,8 @@ body {
 	     -moz-transform: scaleX(-1);
 	       -o-transform: scaleX(-1);
 		  transform: scaleX(-1);
-		 -ms-filter: "FlipH";
-		     filter: FlipH;
+	       /*-ms-filter: "FlipH";
+		     filter: FlipH();*/
 	  border-radius: 100%; box-shadow: 1px 1px 0.5px 1px rgba(0,0,0,0.5);
 	  background: rgba(0,0,0,0.65) url('arrow-folded.png') center no-repeat;
 	  height: 30px; width: 30px;
@@ -250,20 +249,20 @@ body {
 	}
 	
 	.slider ul.slider-dots {
-	  bottom: 0; position: absolute;
+	  bottom: 0; position: absolute; z-index: 10;
 	  height: 35px; margin: 0 auto;
 	}
 	
 	  .slider ul.slider-dots li.dot {
 	    display: inline; position: relative;
-	    padding: 0 4.7855px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
-	    height: 10px; width: 10px;
-	    font-size: 30px; text-shadow: -1px 1px 0.5px rgba(0,0,0,0.5); color: rgba(0,0,0,0.65);
+	    padding: 0 5px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	    height: 15px; width: 15px;
+	    font-size: 37px; text-shadow: -1px 1px 0.5px rgba(0,0,0,0.5); color: rgba(0,0,0,0.65);
 	    list-style-type: none;
 	  }
 	  
 	    .slider ul.slider-dots li.dot.active-dot {
-	      color: rgba(127,127,127,0.65); text-shadow: -1px 1px 0.5px rgba(0,0,0,1), 1px 1px 0.5px rgba(0,0,0,1), 1px -1px 0.5px rgba(0,0,0,1), -1px -1px 0.5px rgba(0,0,0,1);
+	      color: rgba(127,127,127,0.65); text-shadow: -1px 1px 1px rgba(0,0,0,1), 1px 1px 1px rgba(0,0,0,1), 1px -1px 1px rgba(0,0,0,1), -1px -1px 1px rgba(0,0,0,1);
 	    }
 	  
 	  .slider:hover ul.slider-dots {
