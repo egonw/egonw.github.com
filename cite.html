@@ -2,52 +2,23 @@
 
 <body>
   <div id="url-out" data-type="url" class="out"></div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script type="text/javascript" src="https://larsgw.github.io/citation.js/src/citeproc.js"></script>
-  <script type="text/javascript" src="https://larsgw.github.io/citation.js/src/citation-0.2.js"></script>
+
+
+  <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
   <script class="code" type="text/javascript">
 var urldata = new Cite()
 
-    urldata.set( " \
-@article{art1, \
-    title = {SPLASH, a hashed identifier for mass spectra}, \
-    author = {Wohlgemuth, Gert and Mehta, Sajjan S. and Mejia, Ramon F. and Neumann, Steffen and Pedrosa, Diego and Pluskal, Tomas and Schymanski, Emma L. and Willighagen, Egon L. and Wilson, Michael and Wishart, David S. and Arita, Masanori and Dorrestein, Pieter C. and Bandeira, Nuno and Wang, Mingxun and Schulze, Tobias and Salek, Reza M. and Steinbeck, Christoph and Nainala, Venkata C. and Mistrik, Robert and Nishioka, Takaaki and Fiehn, Oliver}, \
-    day = {8}, \
-    doi = {10.1038/nbt.3689}, \
-    journal = {Nature Biotechnology}, \
-    month = {Nov}, \
-    number = {11}, \
-    pages = {1099--1101}, \
-    publisher = {Nature Research}, \
-    volume = {34}, \
-    year = {2016}, \
-} \
-@article{art2, \
-    title = {SPLASH, a hashed identifier for mass spectra}, \
-    author = {Wohlgemuth, Gert and Mehta, Sajjan S. and Mejia, Ramon F. and Neumann, Steffen and Pedrosa, Diego and Pluskal, Tomas and Schymanski, Emma L. and Willighagen, Egon L. and Wilson, Michael and Wishart, David S. and Arita, Masanori and Dorrestein, Pieter C. and Bandeira, Nuno and Wang, Mingxun and Schulze, Tobias and Salek, Reza M. and Steinbeck, Christoph and Nainala, Venkata C. and Mistrik, Robert and Nishioka, Takaaki and Fiehn, Oliver}, \
-    day = {8}, \
-    doi = {10.1038/nbt.3689}, \
-    journal = {Nature Biotechnology}, \
-    month = {Nov}, \
-    number = {11}, \
-    pages = {1099--1101}, \
-    publisher = {Nature Research}, \
-    volume = {34}, \
-    year = {2016}, \
-} \
-" )
+    urldata.set( [ "Q26899110", "Q27795847" ] )
 
     // Get options
     var opt = {
       format: 'string', type  : 'html',
-      style : 'citation-harvard1', lang  : 'en-US'
+      style : 'citation-vancouver-egonw', lang  : 'en-US', template: customTemplate
     }
 
-    // Set options
-    urldata.options( opt )
-
     // Get data
-    $(  '#url-out' ).html(  urldata.get() )
+    htmlOutput = urldata.get( opt )
+    $(  '#url-out' ).html( htmlOutput.replace( /&(lt|#60);/g, '<' ).replace( /&(gt|#62);/g, '>' ) )
 
   </script>
 </body>
