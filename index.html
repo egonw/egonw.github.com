@@ -12,7 +12,6 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/larsgw/citation.js/archive/citation.js/citation-0.3.4.min.js"></script>
     <script type="text/javascript">var Cite = require('citation-js')</script>
-    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
     <script>
 
         // Get options
@@ -400,7 +399,8 @@ assistant professor in the same group in 2014, and got tenure in 2017.
       <script class="code" type="text/javascript">
         Cite.async(["Q27062312", "Q27062639"], function(wikidata) {
           htmlOutput = wikidata.get(opt)
-          $('#cite1').html(htmlOutput)  // / htmlOutput.replace( /&(lt|#60);/g, '<' ).replace( /&(gt|#62);/g, '>' ) )
+          $('#cite1').html(htmlOutput)
+          _altmetric_embed_init()
         })
       </script>
 
@@ -417,7 +417,8 @@ assistant professor in the same group in 2014, and got tenure in 2017.
       <script class="code" type="text/javascript">
         Cite.async(["Q27061962"], function(wikidata) {
           htmlOutput = wikidata.get(opt)
-          $('#cite2').html(htmlOutput)  // / htmlOutput.replace( /&(lt|#60);/g, '<' ).replace( /&(gt|#62);/g, '>' ) )
+          $('#cite2').html(htmlOutput)
+          _altmetric_embed_init()
         })
       </script>
 
@@ -434,7 +435,8 @@ assistant professor in the same group in 2014, and got tenure in 2017.
       <script class="code" type="text/javascript">
         Cite.async(["Q27134724"], function(wikidata) {
           htmlOutput = wikidata.get(opt)
-          $('#cite3').html(htmlOutput)  // / htmlOutput.replace( /&(lt|#60);/g, '<' ).replace( /&(gt|#62);/g, '>' ) )
+          $('#cite3').html(htmlOutput)
+          _altmetric_embed_init()
         })
       </script>
 
@@ -451,7 +453,8 @@ assistant professor in the same group in 2014, and got tenure in 2017.
       <script class="code" type="text/javascript">
         Cite.async(["Q27061829"], function(wikidata) {
           htmlOutput = wikidata.get(opt)
-          $('#cite4').html(htmlOutput)  // / htmlOutput.replace( /&(lt|#60);/g, '<' ).replace( /&(gt|#62);/g, '>' ) )
+          $('#cite4').html(htmlOutput)
+          _altmetric_embed_init()
         })
       </script>
 
