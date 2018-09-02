@@ -8,10 +8,10 @@
     <link rel="meta" type="application/rdf+xml" title="FOAF"
           href="http://www.w3.org/2007/08/pyRdfa/extract?uri=http://egonw.github.com/index.html" />
     <link rel="alternate" type="application/atom+xml" title="Atom"  href="http://chem-bla-ics.blogspot.com/feeds/posts/default" />
-    <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/larsgw/citation.js/archive/citation.js/citation-0.3.4.min.js"></script>
-    <script type="text/javascript">var Cite = require('citation-js')</script>
+    <script src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/larsgw/citation.js/archive/citation.js/citation-0.3.4.min.js"></script>
+    <script>var Cite = require('citation-js')</script>
     <script>
 
         // Get options
@@ -648,10 +648,10 @@ assistant professor in the same group in 2014, and got tenure in 2017.
   </script>
   
   <!-- Folding, dropping and sliding -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>-->
-  <script type="text/javascript">$(document).ready(function(){var foldDisplay=function(){$("h3").each(function(){if($(this).hasClass('folded')){$(this).parent().children('p,ul').slideUp({easing:'linear'});}else if($(this).hasClass('unfolded')){$(this).parent().children('p, ul').slideDown({easing:'linear'});}});};foldDisplay();var switchFold=function(element){if(element.hasClass('folded')){element.removeClass('folded');element.addClass('unfolded');}else if(element.hasClass('unfolded')){element.removeClass('unfolded');element.addClass('folded');}foldDisplay();};$('section.second-layer>h3').click(function(){switchFold($(this))});$('ul.dropdown-list a').click(function(){var id=$(this).attr('href');var element=$(id).children('h3');switchFold(element);});});</script>
-  <script type="text/javascript">
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>-->
+  <script>$(document).ready(function(){var foldDisplay=function(){$("h3").each(function(){if($(this).hasClass('folded')){$(this).parent().children('p,ul').slideUp({easing:'linear'});}else if($(this).hasClass('unfolded')){$(this).parent().children('p, ul').slideDown({easing:'linear'});}});};foldDisplay();var switchFold=function(element){if(element.hasClass('folded')){element.removeClass('folded');element.addClass('unfolded');}else if(element.hasClass('unfolded')){element.removeClass('unfolded');element.addClass('folded');}foldDisplay();};$('section.second-layer>h3').click(function(){switchFold($(this))});$('ul.dropdown-list a').click(function(){var id=$(this).attr('href');var element=$(id).children('h3');switchFold(element);});});</script>
+  <script>
   var main = function() {
   
   $(window).resize(function(){
@@ -746,7 +746,7 @@ assistant professor in the same group in 2014, and got tenure in 2017.
   
   }; $(document).ready(main);
   </script>
-  <script type="text/javascript" >
+  <script >
   $(document).ready(function(){
     $('.nav-list>li').hover(
       function(){
