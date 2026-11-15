@@ -20,7 +20,7 @@ Editing
 
 Shortcodes that can be used in the Markdown: `interest` and `project` (text
 that is also a FOAF statement), `team`, `cite` (references by Wikidata
-identifier), `fold` and `wdqs` (Wikidata Query Service results). Each is
+identifier) and `fold`. Each is
 documented at the top of its file in `layouts/shortcodes/`.
 
 Building

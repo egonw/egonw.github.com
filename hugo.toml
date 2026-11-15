@@ -32,10 +32,6 @@ disableKinds = ["taxonomy", "term", "RSS"]
   pageRef = "/publications"
   weight = 40
 [[menus.main]]
-  name = "Wikidata"
-  pageRef = "/wikidata"
-  weight = 50
-[[menus.main]]
   name = "Contact"
   url = "#addresses"
   weight = 60

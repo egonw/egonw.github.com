@@ -3,7 +3,7 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body{{ if .Params.wide }} class="wide"{{ end }}>
+<body>
   {{ partial "header.html" . }}
   <main typeof="foaf:Person" about="{{ site.Params.foafURI }}">
     {{ block "main" . }}{{ end }}

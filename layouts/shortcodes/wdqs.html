@@ -1,4 +1,0 @@
-{{- /* {{< wdqs title="Education" >}} SPARQL {{< /wdqs >}} : embedded Wikidata Query Service result. half=true for half width. */ -}}
-{{- $q := replace (urlquery (trim .Inner "\n")) "+" "%20" -}}
-<iframe class="wdqs{{ if .Get "half" }} half{{ end }}" loading="lazy"{{ with .Get "title" }} title="{{ . }}"{{ end }} src="https://query.wikidata.org/embed.html#{{ $q | safeURL }}"></iframe>
-{{- /**/ -}}
