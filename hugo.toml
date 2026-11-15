@@ -31,7 +31,3 @@ disableKinds = ["taxonomy", "term", "RSS"]
   name = "Publications"
   pageRef = "/publications"
   weight = 40
-[[menus.main]]
-  name = "Contact"
-  url = "#addresses"
-  weight = 60
