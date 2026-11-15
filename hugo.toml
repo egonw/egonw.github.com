@@ -14,84 +14,28 @@ disableKinds = ["taxonomy", "term", "RSS"]
   feed = "https://chem-bla-ics.linkedchemistry.info/feed.xml"
   relMe = ["https://mastodon.social/@egonw", "https://social.edu.nl/@egonw"]
 
-# Navigation bar. Entries with a "parent" show up in the dropdown of that entry.
+# Navigation bar
 [[menus.main]]
-  identifier = "home"
-  name = "Home"
-  url = "/"
+  name = "Team"
+  pageRef = "/team"
   weight = 10
 [[menus.main]]
-  identifier = "team"
-  name = "My Team"
-  url = "/team/"
+  name = "Research"
+  pageRef = "/research"
   weight = 20
 [[menus.main]]
-  name = "Group Members"
-  url = "/team/#group-members"
-  parent = "team"
-  weight = 1
-[[menus.main]]
-  name = "Past Members"
-  url = "/team/#past-members"
-  parent = "team"
-  weight = 2
-[[menus.main]]
-  name = "Past Students"
-  url = "/team/#past-students"
-  parent = "team"
-  weight = 3
-[[menus.main]]
-  identifier = "research"
-  name = "Research"
-  url = "/research/"
+  name = "Collaborations"
+  pageRef = "/collaborations"
   weight = 30
 [[menus.main]]
-  name = "Semantic Technologies"
-  url = "/research/#semantic-technologies"
-  parent = "research"
-  weight = 1
-[[menus.main]]
-  name = "Molecular Representation"
-  url = "/research/#molecular-representation"
-  parent = "research"
-  weight = 2
-[[menus.main]]
-  name = "Statistics"
-  url = "/research/#statistics"
-  parent = "research"
-  weight = 3
-[[menus.main]]
-  name = "Applied Cheminformatics"
-  url = "/research/#applied-cheminformatics"
-  parent = "research"
-  weight = 4
-[[menus.main]]
-  identifier = "collaborations"
-  name = "Collaborations"
-  url = "/collaborations/"
+  name = "Publications"
+  pageRef = "/publications"
   weight = 40
 [[menus.main]]
-  name = "Dutch Projects"
-  url = "/collaborations/#dutch-projects"
-  parent = "collaborations"
-  weight = 1
-[[menus.main]]
-  name = "EU Projects"
-  url = "/collaborations/#euprojects"
-  parent = "collaborations"
-  weight = 2
-[[menus.main]]
-  identifier = "publications"
-  name = "Publications"
-  url = "/publications/"
+  name = "Wikidata"
+  pageRef = "/wikidata"
   weight = 50
 [[menus.main]]
-  name = "Wikidata Profile"
-  url = "/wikidata.html"
-  parent = "publications"
-  weight = 1
-[[menus.main]]
-  identifier = "addresses"
-  name = "Addresses"
+  name = "Contact"
   url = "#addresses"
   weight = 60

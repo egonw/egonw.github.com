@@ -1,6 +1,13 @@
-{{ define "top" }}{{ partial "slider.html" . }}{{ end }}
 {{ define "main" }}
-<section id="about-me">
-  {{ .Content }}
-</section>
+<div class="wrap">
+  <section class="hero">
+    <h1>{{ site.Params.givenName }} {{ site.Params.familyName }}</h1>
+    <p class="lead">{{ site.Params.position | markdownify }}</p>
+    <p class="orcid">ORCID: <a rel="owl:sameAs" href="http://orcid.org/{{ site.Params.orcid }}">{{ site.Params.orcid }}</a></p>
+  </section>
+  {{ partial "slider.html" . }}
+  <article id="about-me">
+    {{ .Content }}
+  </article>
+</div>
 {{ end }}

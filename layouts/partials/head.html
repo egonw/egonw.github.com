@@ -1,0 +1,20 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+<link rel="foaf:primaryTopic" href="{{ site.Params.foafURI }}" />
+{{- range site.Params.relMe }}
+<link href="{{ . }}" rel="me" />
+{{- end }}
+{{- with site.Params.feed }}
+<link rel="alternate" type="application/atom+xml" title="Atom" href="{{ . }}" />
+{{- end }}
+{{- with resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
+{{- end }}
+{{- if .HasShortcode "cite" }}
+<script defer src="https://cdn.jsdelivr.net/npm/citation-js@0.7.22/build/citation.min.js"></script>
+<script defer src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+{{- end }}
+{{- with resources.Get "js/main.js" | minify | fingerprint }}
+<script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+{{- end }}

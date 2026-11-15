@@ -10,12 +10,12 @@
     </div>
   </div>
   {{- end }}
-  <button type="button" class="slide-prev" aria-label="Previous slide"></button>
+  <button type="button" class="slide-prev" aria-label="Previous slide">&lsaquo;</button>
   <ul class="slider-dots">
     {{- range $i, $s := . }}
-    <li><button type="button" class="dot{{ if eq $i 0 }} active-dot{{ end }}" aria-label="Slide {{ add $i 1 }}">&bull;</button></li>
+    <li><button type="button" class="dot{{ if eq $i 0 }} active-dot{{ end }}" aria-label="Slide {{ add $i 1 }}"></button></li>
     {{- end }}
   </ul>
-  <button type="button" class="slide-next" aria-label="Next slide"></button>
+  <button type="button" class="slide-next" aria-label="Next slide">&rsaquo;</button>
 </div>
 {{- end }}

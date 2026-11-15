@@ -1,16 +1,43 @@
-<footer id="footer">
-  <ul class="footer-list">
-    <li>
-      <a href="https://validator.w3.org/nu/?doc={{ .Permalink }}">
-        <img style="height:36px" src="{{ "200px-HTML5_logo_and_wordmark.svg.png" | relURL }}" alt="Valid HTML5 + RDFa" /></a>
-    </li>
-    <li>
-      <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="height:32px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" /></a>
-    </li>
-    <li>
-      <a href="http://www.w3.org/2012/pyRdfa/extract?uri={{ .Permalink }}">
-        <img style="height:32px" src="{{ "rdf_w3c_button.32.gif" | relURL }}" alt="Extract RDF" /></a>
-    </li>
-  </ul>
+{{- $c := site.Data.contact }}
+<footer class="site-footer" typeof="foaf:Person" about="{{ site.Params.foafURI }}">
+  <div class="wrap">
+    <section id="addresses" class="addresses">
+      <div>
+        <h2>Post address</h2>
+        <p>
+          {{- range $c.post }}
+          {{ if .url }}<a rel="foaf:workplaceHomepage" href="{{ .url }}">{{ .text }}</a>{{ else }}{{ .text }}{{ end }}
+          {{- with .city }} <span property="foaf:based_near">{{ . }}</span>{{ end }}<br />
+          {{- end }}
+        </p>
+      </div>
+      <div>
+        <h2>Visiting address</h2>
+        <p>
+          {{- range $c.visit }}
+          {{ . }}<br />
+          {{- end }}
+        </p>
+      </div>
+      <div>
+        <h2>Online</h2>
+        <ul>
+          {{- with $c.email }}
+          <li>Email: <span rel="foaf:holdsAccount"><span typeof="foaf:OnlineAccount" about="#gmail"><span property="foaf:accountName" datatype="">{{ .user }}</span>@<a rel="foaf:accountServiceHomepage" href="{{ .serviceUrl }}">{{ .service }}</a></span></span></li>
+          {{- end }}
+          {{- with $c.blog }}
+          <li>Blog: <a rel="foaf:weblog" href="{{ .url }}">{{ .name }}</a></li>
+          {{- end }}
+          {{- range $c.accounts }}
+          <li><span rel="foaf:holdsAccount"><span typeof="foaf:OnlineAccount" about="#{{ .id }}"><span property="foaf:accountName" datatype=""><a href="{{ .url }}">{{ .name }}</a></span>@<a rel="foaf:accountServiceHomepage" href="{{ .serviceUrl }}">{{ .service }}</a></span></span></li>
+          {{- end }}
+        </ul>
+      </div>
+    </section>
+    <ul class="badges">
+      <li><a href="https://validator.w3.org/nu/?doc={{ .Permalink }}"><img src="{{ "200px-HTML5_logo_and_wordmark.svg.png" | relURL }}" alt="Valid HTML5 + RDFa" /></a></li>
+      <li><a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" /></a></li>
+      <li><a href="http://www.w3.org/2012/pyRdfa/extract?uri={{ .Permalink }}"><img src="{{ "rdf_w3c_button.32.gif" | relURL }}" alt="Extract RDF" /></a></li>
+    </ul>
+  </div>
 </footer>
