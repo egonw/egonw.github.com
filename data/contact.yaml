@@ -2,7 +2,7 @@
 post:
   - text: Maastricht University
     url: https://www.maastrichtuniversity.nl/
-  - text: Department of Translational Genomics
+  - text: Department of Translational Genomics (TGX)
     url: https://www.maastrichtuniversity.nl/research/translational-genomics/
   - text: dr E.L. Willighagen
   - text: P.O. Box 616
@@ -10,7 +10,7 @@ post:
   - text: NL-6200 MD
     city: Maastricht
 visit:
-  - Department of Bioinformatics - BiGCaT
+  - Department of Translational Genomics (TGX)
   - Universiteitssingel 60
   - Room M1.12b
   - Maastricht

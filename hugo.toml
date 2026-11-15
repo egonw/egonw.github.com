@@ -10,7 +10,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
   # URI that identifies me in the RDFa (FOAF) statements embedded in every page
   foafURI = "http://egonw.github.com/#me"
   # Shown in the orange header; Markdown is allowed
-  position = "Assistant Professor at the [Department of Bioinformatics - BiGCaT](http://www.bigcat.unimaas.nl/) of the [NUTRIM research school](http://www.maastrichtuniversity.nl/nutrim/) at [Maastricht University](http://www.maastrichtuniversity.nl/)."
+  position = "Assistant Professor at the [Department of Translational Genomics](https://www.maastrichtuniversity.nl/research/translational-genomics) of the [NUTRIM research school](http://www.maastrichtuniversity.nl/nutrim/) at [Maastricht University](http://www.maastrichtuniversity.nl/)."
   feed = "https://chem-bla-ics.linkedchemistry.info/feed.xml"
   relMe = ["https://mastodon.social/@egonw", "https://social.edu.nl/@egonw"]
 
