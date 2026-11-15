@@ -31,3 +31,11 @@ disableKinds = ["taxonomy", "term", "RSS"]
   name = "Publications"
   pageRef = "/publications"
   weight = 40
+[[menus.main]]
+  name = "Blog"
+  url = "https://chem-bla-ics.linkedchemistry.info/"
+  weight = 50
+[[menus.main]]
+  name = "CV"
+  url = "https://egonw.github.io/cv/"
+  weight = 60
