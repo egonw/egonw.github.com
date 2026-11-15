@@ -1,0 +1,17 @@
+<nav class="nav">
+  <ul class="nav-list">
+    {{- $page := . }}
+    {{- range site.Menus.main }}
+    <li{{ if or ($page.IsMenuCurrent "main" .) (eq ($page.RelPermalink) (.URL | relURL)) }} class="current"{{ end }}>
+      <a href="{{ if hasPrefix .URL "#" }}{{ .URL }}{{ else }}{{ .URL | relURL }}{{ end }}">{{ .Name }}</a>
+      {{- with .Children }}
+      <ul class="dropdown-list">
+        {{- range . }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+</nav>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html prefix="foaf: http://xmlns.com/foaf/0.1/" lang="{{ site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} - {{ site.Title }}{{ end }}</title>
+    <link rel="foaf:primaryTopic" href="{{ site.Params.foafURI }}" />
+    {{- range site.Params.relMe }}
+    <link href="{{ . }}" rel="me" />
+    {{- end }}
+    <link rel="stylesheet" type="text/css" href="{{ "egonw.css" | relURL }}" />
+    {{- with site.Params.feed }}
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ . }}" />
+    {{- end }}
+    {{- if .HasShortcode "cite" }}
+    <script defer src="https://cdn.jsdelivr.net/npm/citation-js@0.7.22/build/citation.min.js"></script>
+    <script defer src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+    {{- end }}
+    <script defer src="{{ "js/site.js" | relURL }}"></script>
+  </head>
+  <body{{ if .Params.wide }} class="wide"{{ end }}>
+    <div id="container">
+      {{ partial "header.html" . }}
+      <div id="content" typeof="foaf:Person" about="{{ site.Params.foafURI }}">
+        {{ partial "nav.html" . }}
+        {{ block "top" . }}{{ end }}
+        <div class="columns">
+          <main id="main">
+            {{ block "main" . }}{{ end }}
+          </main>
+          {{ partial "sidebar.html" . }}
+        </div>
+      </div>
+      {{ partial "footer.html" . }}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{{- /* {{< cite "Q27062312" "Q27062639" >}} : references by Wikidata item, formatted in the browser by Citation.js */ -}}
+<ul class="cite" data-wikidata="{{ delimit .Params " " }}">
+  {{- range .Params }}
+  <li><a href="https://www.wikidata.org/wiki/{{ . }}">wikidata:{{ . }}</a></li>
+  {{- end }}
+</ul>

@@ -1,0 +1,5 @@
+<header id="header" typeof="foaf:Person" about="{{ site.Params.foafURI }}">
+  <h1><a href="{{ "/" | relURL }}"><span property="foaf:givenname">{{ site.Params.givenName }}</span> <span property="foaf:family_name">{{ site.Params.familyName }}</span></a></h1>
+  <p>ORCID:<a rel="owl:sameAs" href="http://orcid.org/{{ site.Params.orcid }}">{{ site.Params.orcid }}</a></p>
+  <p>{{ site.Params.position | markdownify }}</p>
+</header>

@@ -1,0 +1,5 @@
+{{- /* {{< fold title="Biography" >}} Markdown {{< /fold >}} : a section that unfolds on click. Optional: id, open="true". */ -}}
+<details class="fold"{{ with .Get "id" }} id="{{ . }}"{{ end }}{{ if .Get "open" }} open{{ end }}>
+  <summary>{{ .Get "title" }}</summary>
+  {{ .Inner | .Page.RenderString (dict "display" "block") }}
+</details>

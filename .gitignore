@@ -1,2 +1,5 @@
 *~
 *.kate-swp
+/public/
+/resources/
+.hugo_build.lock

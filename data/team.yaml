@@ -1,0 +1,141 @@
+# People listed on the team page with {{< team "current" >}} etc.
+# Fields: id, given, family, affiliation, role, and optionally
+# note, orcid, blog, report (label + url).
+current:
+  - id: denise
+    given: Denise
+    family: Slenter
+    affiliation: Maastricht University
+    role: Researcher 2017-
+    orcid: 0000-0001-8449-1318
+  - id: javier
+    given: Javier
+    family: Millán Acosta
+    affiliation: Maastricht University
+    role: Researcher 2022-
+  - id: ozan
+    given: Ozan
+    family: Cinar
+    affiliation: Maastricht University
+    role: Researcher 2022-
+  - id: marvin
+    given: Marvin
+    family: Martens
+    affiliation: Maastricht University
+    role: Researcher 2024-
+  - id: shakira
+    given: Shakira
+    family: Agata
+    affiliation: Maastricht University
+    role: Researcher software engineer 2025-
+  - id: sidra
+    given: Sidra
+    family: Adil
+    affiliation: Maastricht University
+    role: Researcher 2024-
+
+past:
+  - id: ammar
+    given: Ammar
+    family: Ammar
+    affiliation: Maastricht University
+    role: Researcher 2020-
+    orcid: 0000-0002-8399-8990
+  - id: jeaphianne
+    given: Jeaphianne
+    family: van Rijn
+    affiliation: Maastricht University
+    role: Researcher 2020-
+    orcid: 0000-0001-5026-7705
+  - id: helena
+    given: Helena
+    family: Basaric
+    affiliation: Maastricht University
+    role: Research Software Engineer 2022-2023
+  - id: laurent
+    given: Laurent
+    family: Winckers
+    affiliation: Maastricht University
+    role: Researcher 2019-2020
+    orcid: 0000-0002-9454-4783
+  - id: serena
+    given: Serena
+    family: Bonaretti
+    affiliation: Maastricht University
+    role: Researcher 2019
+    orcid: 0000-0003-4264-1773
+  - id: freddy
+    given: Friederike
+    family: Ehrhart
+    affiliation: Maastricht University
+    role: Researcher 2015-2017
+    orcid: 0000-0002-7770-620X
+  - id: linda
+    given: Linda
+    family: Rieswijk
+    affiliation: Maastricht University
+    role: Researcher 2015-2017
+    orcid: 0000-0002-6106-1347
+  - id: bart
+    given: Bart
+    family: Smeets
+    affiliation: Maastricht University
+    role: PhD student 2014-2016
+    orcid: 0000-0001-6370-6965
+  - id: cristian
+    given: Cristian
+    family: Munteanu
+    affiliation: Maastricht University
+    role: postdoc 2014
+    orcid: 0000-0002-5628-2268
+
+students:
+  - id: jacob
+    given: Jacob
+    family: Windsor
+    affiliation: Maastricht University
+    role: B.Sc. student 2017
+    report:
+      label: doi:10.6084/m9.figshare.5027888.v1
+      url: https://doi.org/10.6084/m9.figshare.5027888.v1
+  - id: vincent
+    given: Vincent
+    family: Couckuyt
+    affiliation: Maastricht University
+    role: B.Sc. student 2016
+  - id: miguel
+    given: Miguel
+    family: Correa
+    affiliation: Maastricht University
+    role: M.Sc. student 2015
+    note: from Wageningen University
+  - id: esmee
+    given: Esmee
+    family: Eeltink
+    affiliation: Maastricht University
+    role: B.Sc. student 2014
+    note: from the University of Amsterdam
+  - id: patricia
+    given: Patricia
+    family: Zaandam
+    affiliation: Maastricht University
+    role: B.Sc. student 2014
+    blog: http://intership-malaria-solutions.blogspot.nl/
+  - id: annzi
+    given: Ann-Sofie
+    family: Andersson
+    affiliation: Uppsala University
+    role: M.Sc. student 2010
+    blog: http://annziproject.blogspot.com/
+    report:
+      label: urn:nbn:se:uu:diva-155184
+      url: http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-155184
+  - id: samuel
+    given: Samuel
+    family: Lampa
+    affiliation: Uppsala University
+    role: M.Sc. student 2009-2010
+    blog: http://saml.rilspace.com/
+    report:
+      label: urn:nbn:se:uu:diva-146738
+      url: http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-146738

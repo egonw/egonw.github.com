@@ -1,0 +1,258 @@
+/* Style of egonw.github.io: orange header and footer, white page on gray. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote {
+  margin: 0; padding: 0; border: 0;
+}
+
+body {
+  background: #7c7c7c;
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+#container {
+  width: 90%; max-width: 1190px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* Header */
+
+#header {
+  min-height: 100px;
+  color: white;
+  background-color: orange;
+  padding: 5pt;
+}
+
+#header a { color: white; }
+#header h1 a { text-decoration: none; }
+
+/* Navigation */
+
+.nav {
+  min-height: 35px;
+  padding-left: 5px;
+  border-bottom: orange 1px solid;
+  margin-bottom: 10px;
+}
+
+.nav ul { list-style: none; }
+
+.nav ul.nav-list > li {
+  display: inline-block;
+  padding: 7.5px 5px;
+  border-right: orange 1px solid;
+  position: relative;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black; font-weight: bold;
+}
+
+.nav ul.nav-list > li.current > a { color: #c66a00; }
+
+.nav ul.dropdown-list {
+  display: none;
+  position: absolute; z-index: 20;
+  top: 100%; left: -1px;
+  min-width: calc(100% + 2px);
+  border-top: orange 1px solid;
+}
+
+.nav ul.nav-list > li:hover ul.dropdown-list,
+.nav ul.nav-list > li:focus-within ul.dropdown-list {
+  display: block;
+}
+
+.nav ul.dropdown-list li {
+  background-color: white;
+  border-bottom: orange 1px solid;
+  border-right: orange 1px solid;
+  border-left: orange 1px solid;
+  white-space: nowrap;
+}
+
+.nav ul.dropdown-list li a { display: block; padding: 10px 8px; }
+
+.nav ul.dropdown-list li:hover { background-color: #FFB280; }
+
+/* Two columns: main text and the addresses */
+
+.columns { display: flex; align-items: flex-start; }
+
+#main {
+  width: 65%;
+  overflow-wrap: anywhere;
+  padding: 0 10px 10px 10px;
+}
+
+.sidebar {
+  width: 35%;
+  padding: 0 30px 10px 10px;
+}
+
+body.wide .columns { display: block; }
+body.wide #main, body.wide .sidebar { width: 100%; }
+
+/* Text */
+
+#content h2 {
+  margin: 10px;
+  color: black;
+}
+
+#content h3, #content h4 {
+  margin: 10px 10px 10px 20px;
+  color: gray;
+}
+
+#content p {
+  font-size: 12pt; color: black; line-height: 24px; margin: 0 0 15px 20px;
+}
+
+#content #addresses p, #content #about-me > p { margin-left: 10px; }
+
+#main ul {
+  margin: 0 0 15px 30px;
+  list-style: none;
+}
+
+#main ul li { font-size: 12pt; line-height: 24px; margin-bottom: 8px; }
+
+#main ul.cite li { margin-bottom: 15px; }
+.csl-left-margin { display: none; }
+.csl-entry, .csl-right-inline { display: inline; }
+
+/* Folding sections */
+
+details.fold > summary {
+  margin: 10px 10px 10px 20px;
+  color: gray; font-size: 1.17em; font-weight: bold;
+  cursor: pointer;
+  list-style-position: inside;
+  list-style-image: url('arrow-folded.png');
+  user-select: none;
+}
+
+details.fold[open] > summary { list-style-image: url('arrow-unfolded.png'); }
+
+#content details.fold > p { margin-left: 30px; }
+
+/* Wikidata Query Service results */
+
+iframe.wdqs {
+  width: 100%; height: 50vh;
+  border: 0;
+}
+
+iframe.wdqs.half { width: 49%; }
+
+/* Slider */
+
+.slider {
+  position: relative;
+  height: 200px;
+  margin: 0 30px 10px 20px;
+}
+
+.slider .slide {
+  display: none;
+  position: relative;
+  width: 100%; height: 100%;
+  padding: 15px;
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover, contain;
+}
+
+.slider .slide.active { display: block; }
+
+.slider .slide div { position: absolute; bottom: 20px; left: 15px; right: 15px; }
+
+.slider .slide * { color: white; text-shadow: -1px 1px 1.5px rgba(0,0,0,0.5); overflow-wrap: anywhere; }
+.slider h4 { font-weight: bold; font-size: 24pt; }
+
+.slider button {
+  border: 0; padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.slider .slide-prev, .slider .slide-next {
+  border-radius: 100%;
+  background: rgba(0,0,0,0.65) url('arrow-folded.png') center no-repeat;
+  height: 30px; width: 30px;
+  top: 85px; position: absolute; z-index: 10;
+  opacity: 0.5;
+}
+
+.slider .slide-prev {
+  transform: scaleX(-1);
+  box-shadow: 1px 1px 0.5px 1px rgba(0,0,0,0.5);
+  left: 10px;
+}
+
+.slider .slide-next {
+  box-shadow: -1px 1px 0.5px 1px rgba(0,0,0,0.5);
+  right: 10px;
+}
+
+.slider ul.slider-dots {
+  position: absolute; z-index: 10;
+  bottom: 0; left: 0; right: 0;
+  height: 22px;
+  text-align: center;
+  list-style: none;
+  opacity: 0.5;
+}
+
+.slider ul.slider-dots li { display: inline-block; }
+
+.slider .dot {
+  background: none;
+  width: 20px; height: 22px;
+  font-size: 37px; line-height: 22px;
+  text-shadow: -1px 1px 0.5px rgba(0,0,0,0.5); color: rgba(0,0,0,0.65);
+}
+
+.slider .dot.active-dot {
+  color: rgba(127,127,127,0.65);
+  text-shadow: -1px 1px 1px rgba(0,0,0,1), 1px 1px 1px rgba(0,0,0,1), 1px -1px 1px rgba(0,0,0,1), -1px -1px 1px rgba(0,0,0,1);
+}
+
+.slider:hover .slide-prev, .slider:hover .slide-next, .slider:hover ul.slider-dots { opacity: 1; }
+
+/* Footer */
+
+#footer {
+  height: 85px;
+  background-color: orange;
+}
+
+#footer ul.footer-list {
+  display: table;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+
+#footer ul.footer-list > li {
+  list-style: none;
+  display: inline-block;
+  height: 36px;
+}
+
+/* Small screens: one column */
+
+@media (max-width: 760px) {
+  #container { width: 100%; }
+  .columns { display: block; }
+  #main, .sidebar { width: 100%; padding-right: 10px; }
+  .slider { margin: 0 10px 10px 10px; }
+  .slider h4 { font-size: 14pt; }
+  .slider .slide div { left: 45px; right: 45px; }
+  iframe.wdqs.half { width: 100%; }
+}

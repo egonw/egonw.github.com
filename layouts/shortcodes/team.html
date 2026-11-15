@@ -1,0 +1,13 @@
+{{- /* {{< team "current" >}} : list the people of one group in data/team.yaml */ -}}
+<ul class="people">
+  {{- range index site.Data.team (.Get 0) }}
+  <li><span rel="foaf:knows"><span typeof="foaf:Person" about="#{{ .id }}">
+    <span property="foaf:firstname">{{ .given }}</span> <span property="foaf:surname">{{ .family }}</span>
+    ({{ .affiliation }}; {{ .role }}
+    {{- with .note }}; {{ . }}{{ end }}
+    {{- with .orcid }}; ORCID:<a rel="owl:sameAs" href="http://orcid.org/{{ . }}">{{ . }}</a>{{ end }}
+    {{- with .blog }}; <a rel="foaf:weblog" href="{{ . }}">blog</a>{{ end }}
+    {{- with .report }}; report:<a href="{{ .url }}">{{ .label }}</a>{{ end }})
+  </span></span></li>
+  {{- end }}
+</ul>

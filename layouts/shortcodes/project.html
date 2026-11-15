@@ -1,0 +1,7 @@
+{{- /* {{< project name="ToxBank" url="http://www.toxbank.net/" >}} : a foaf:Project I take part in. Optional: id. */ -}}
+{{- $name := .Get "name" -}}
+{{- $id := .Get "id" | default (replaceRE "[^a-z0-9]" "" (lower $name)) -}}
+<span rel="foaf:currentProject"><span typeof="foaf:Project" about="#{{ $id }}">
+{{- with .Get "url" }}<a rel="foaf:homepage" href="{{ . }}">{{ $name }}</a>{{ else }}{{ $name }}{{ end -}}
+</span></span>
+{{- /**/ -}}

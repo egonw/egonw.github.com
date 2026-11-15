@@ -1,0 +1,17 @@
+# Slides of the slider on the home page.
+# image: a file in static/ or a full URL.
+- title: ChEMBL database as linked open data
+  url: http://www.jcheminf.com/content/5/1/23
+  image: http://www.jcheminf.com/content/figures/1758-2946-5-23-graphical-abstract.gif
+- title: The eNanoMapper database for nanomaterial safety information
+  url: http://dx.doi.org/10.3762/bjnano.6.165
+  image: https://www.beilstein-journals.org/bjnano/content/figures/2190-4286-6-165-14.png?max-width=550&background=EEEEEE
+- title: "Bioclipse-R: integrating management and visualization of life science data with statistical analysis"
+  url: http://dx.doi.org/10.1093/bioinformatics/bts681
+  image: show3.gif
+- title: "WikiPathways WP2513: Nanoparticle triggered regulated necrosis"
+  url: http://www.wikipathways.org/index.php/Pathway:WP2513
+  image: show4.gif
+- title: SPLASH, a hashed identifier for mass spectra
+  url: http://rdcu.be/msZj
+  image: https://1.bp.blogspot.com/-cXsJMZfge54/WCXPw8MVB5I/AAAAAAAAEps/osqKx0Wx27kMzhuhkorkHMe-iWQ-tUbpACLcB/s400/splash.png

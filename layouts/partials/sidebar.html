@@ -1,0 +1,43 @@
+{{- $c := site.Data.contact }}
+<aside class="sidebar">
+  <section id="addresses">
+    <h2>Addresses</h2>
+
+    <section id="post-addresses" class="address">
+      <h3>Post Address</h3>
+      <p>
+        {{- range $c.post }}
+        {{ if .url }}<a rel="foaf:workplaceHomepage" href="{{ .url }}">{{ .text }}</a>{{ else }}{{ .text }}{{ end }}
+        {{- with .city }} <span property="foaf:based_near">{{ . }}</span>{{ end }}<br />
+        {{- end }}
+      </p>
+    </section>
+
+    <section id="visit-addresses" class="address">
+      <h3>Visiting Address</h3>
+      <p>
+        {{- range $c.visit }}
+        {{ . }}<br />
+        {{- end }}
+      </p>
+    </section>
+
+    <section id="web-addresses" class="address">
+      <h3>Web Addresses</h3>
+      <p>
+        {{- with $c.email }}
+        <b>Email</b>:
+        <span rel="foaf:holdsAccount"><span typeof="foaf:OnlineAccount" about="#gmail"><span property="foaf:accountName" datatype="">{{ .user }}</span>@<a rel="foaf:accountServiceHomepage" href="{{ .serviceUrl }}">{{ .service }}</a></span></span>.
+        {{- end }}
+        {{- with $c.blog }}
+        <b>Blog</b>: <a rel="foaf:weblog" href="{{ .url }}">{{ .name }}</a>.
+        {{- end }}
+        <b>Social Networking</b>:
+        {{- $n := len $c.accounts }}
+        {{- range $i, $a := $c.accounts }}
+        <span rel="foaf:holdsAccount"><span typeof="foaf:OnlineAccount" about="#{{ $a.id }}"><span property="foaf:accountName" datatype=""><a href="{{ $a.url }}">{{ $a.name }}</a></span>@<a rel="foaf:accountServiceHomepage" href="{{ $a.serviceUrl }}">{{ $a.service }}</a></span></span>{{ if lt (add $i 1) $n }},{{ end }}
+        {{- end }}
+      </p>
+    </section>
+  </section>
+</aside>

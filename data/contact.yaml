@@ -1,0 +1,54 @@
+# The "Addresses" block shown next to every page.
+post:
+  - text: Maastricht University
+    url: https://www.maastrichtuniversity.nl/
+  - text: Department of Translational Genomics
+    url: https://www.maastrichtuniversity.nl/research/translational-genomics/
+  - text: dr E.L. Willighagen
+  - text: P.O. Box 616
+  - text: UNS50 Box19
+  - text: NL-6200 MD
+    city: Maastricht
+visit:
+  - Department of Bioinformatics - BiGCaT
+  - Universiteitssingel 60
+  - Room M1.12b
+  - Maastricht
+email:
+  user: egon.willighagen
+  service: Gmail
+  serviceUrl: http://gmail.com/
+blog:
+  name: chem-bla-ics
+  url: https://chem-bla-ics.linkedchemistry.info/
+accounts:
+  - id: sourceforge
+    name: egonw
+    url: http://sourceforge.net/users/egonw
+    service: SourceForge
+    serviceUrl: http://sourceforge.net/
+  - id: github
+    name: egonw
+    url: http://github.com/egonw/
+    service: GitHub
+    serviceUrl: http://github.com/
+  - id: mastodon
+    name: egonw
+    url: https://social.edu.nl/@egonw
+    service: social.edu.nl
+    serviceUrl: http://social.edu.nl/
+  - id: zotero
+    name: egonw
+    url: https://www.zotero.org/egonw
+    service: Zotero
+    serviceUrl: https://www.zotero.org/
+  - id: orcid
+    name: 0000-0001-7542-0286
+    url: http://orcid.org/0000-0001-7542-0286
+    service: ORCID
+    serviceUrl: http://orcid.org/
+  - id: wikidata
+    name: Egon Willighagen
+    url: https://www.wikidata.org/wiki/User:Egon_Willighagen
+    service: Wikidata
+    serviceUrl: https://www.wikidata.org/

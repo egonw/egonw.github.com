@@ -1,0 +1,7 @@
+{{- /* {{< interest "nanotoxicology" >}} : italic text that is also a foaf:interest in the RDFa.
+       {{< interest "metabolomics" "plain" >}} does the same without italics. */ -}}
+{{- if eq (.Get 1) "plain" -}}
+<span property="foaf:interest">{{ .Get 0 }}</span>
+{{- else -}}
+<i property="foaf:interest">{{ .Get 0 }}</i>
+{{- end -}}

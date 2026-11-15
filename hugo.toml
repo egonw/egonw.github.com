@@ -1,0 +1,97 @@
+baseURL = "https://egonw.github.io/"
+languageCode = "en"
+title = "Egon L. Willighagen"
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  givenName = "Egon"
+  familyName = "Willighagen"
+  orcid = "0000-0001-7542-0286"
+  # URI that identifies me in the RDFa (FOAF) statements embedded in every page
+  foafURI = "http://egonw.github.com/#me"
+  # Shown in the orange header; Markdown is allowed
+  position = "Assistant Professor at the [Department of Bioinformatics - BiGCaT](http://www.bigcat.unimaas.nl/) of the [NUTRIM research school](http://www.maastrichtuniversity.nl/nutrim/) at [Maastricht University](http://www.maastrichtuniversity.nl/)."
+  feed = "https://chem-bla-ics.linkedchemistry.info/feed.xml"
+  relMe = ["https://mastodon.social/@egonw", "https://social.edu.nl/@egonw"]
+
+# Navigation bar. Entries with a "parent" show up in the dropdown of that entry.
+[[menus.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 10
+[[menus.main]]
+  identifier = "team"
+  name = "My Team"
+  url = "/team/"
+  weight = 20
+[[menus.main]]
+  name = "Group Members"
+  url = "/team/#group-members"
+  parent = "team"
+  weight = 1
+[[menus.main]]
+  name = "Past Members"
+  url = "/team/#past-members"
+  parent = "team"
+  weight = 2
+[[menus.main]]
+  name = "Past Students"
+  url = "/team/#past-students"
+  parent = "team"
+  weight = 3
+[[menus.main]]
+  identifier = "research"
+  name = "Research"
+  url = "/research/"
+  weight = 30
+[[menus.main]]
+  name = "Semantic Technologies"
+  url = "/research/#semantic-technologies"
+  parent = "research"
+  weight = 1
+[[menus.main]]
+  name = "Molecular Representation"
+  url = "/research/#molecular-representation"
+  parent = "research"
+  weight = 2
+[[menus.main]]
+  name = "Statistics"
+  url = "/research/#statistics"
+  parent = "research"
+  weight = 3
+[[menus.main]]
+  name = "Applied Cheminformatics"
+  url = "/research/#applied-cheminformatics"
+  parent = "research"
+  weight = 4
+[[menus.main]]
+  identifier = "collaborations"
+  name = "Collaborations"
+  url = "/collaborations/"
+  weight = 40
+[[menus.main]]
+  name = "Dutch Projects"
+  url = "/collaborations/#dutch-projects"
+  parent = "collaborations"
+  weight = 1
+[[menus.main]]
+  name = "EU Projects"
+  url = "/collaborations/#euprojects"
+  parent = "collaborations"
+  weight = 2
+[[menus.main]]
+  identifier = "publications"
+  name = "Publications"
+  url = "/publications/"
+  weight = 50
+[[menus.main]]
+  name = "Wikidata Profile"
+  url = "/wikidata.html"
+  parent = "publications"
+  weight = 1
+[[menus.main]]
+  identifier = "addresses"
+  name = "Addresses"
+  url = "#addresses"
+  weight = 60
