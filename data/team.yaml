@@ -2,20 +2,9 @@
 # Fields: id, given, family, affiliation, role, and optionally
 # note, orcid, blog, report (label + url).
 current:
-  - id: denise
-    given: Denise
-    family: Slenter
-    affiliation: Maastricht University
-    role: Researcher 2017-
-    orcid: 0000-0001-8449-1318
   - id: javier
     given: Javier
     family: Millán Acosta
-    affiliation: Maastricht University
-    role: Researcher 2022-
-  - id: ozan
-    given: Ozan
-    family: Cinar
     affiliation: Maastricht University
     role: Researcher 2022-
   - id: marvin
@@ -23,11 +12,11 @@ current:
     family: Martens
     affiliation: Maastricht University
     role: Researcher 2024-
-  - id: shakira
-    given: Shakira
-    family: Agata
+  - id: aishwarya
+    given: Aishwarya
+    family: Iyer
     affiliation: Maastricht University
-    role: Researcher software engineer 2025-
+    role: Researcher 2026-
   - id: sidra
     given: Sidra
     family: Adil
@@ -35,17 +24,33 @@ current:
     role: Researcher 2024-
 
 past:
+  - id: ozan
+    given: Ozan
+    family: Cinar
+    affiliation: Maastricht University
+    role: Researcher 2022-2026
+  - id: shakira
+    given: Shakira
+    family: Agata
+    affiliation: Maastricht University
+    role: Researcher software engineer 2025-2026
+  - id: denise
+    given: Denise
+    family: Slenter
+    affiliation: Maastricht University
+    role: Researcher 2017-2026
+    orcid: 0000-0001-8449-1318
   - id: ammar
     given: Ammar
     family: Ammar
     affiliation: Maastricht University
-    role: Researcher 2020-
+    role: Researcher 2020-2024
     orcid: 0000-0002-8399-8990
   - id: jeaphianne
     given: Jeaphianne
     family: van Rijn
     affiliation: Maastricht University
-    role: Researcher 2020-
+    role: Researcher 2020-2024
     orcid: 0000-0001-5026-7705
   - id: helena
     given: Helena
@@ -90,6 +95,11 @@ past:
     orcid: 0000-0002-5628-2268
 
 students:
+  - id: aitor
+    given: Aitor
+    family: Arias Sánchez
+    affiliation: Maastricht University
+    role: B.Sc. student 2025
   - id: jacob
     given: Jacob
     family: Windsor
